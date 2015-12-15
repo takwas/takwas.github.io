@@ -82,6 +82,10 @@ html {
   margin-top: 0;
   font-family: "Abril Fatface", serif;
   font-size: 3rem;
+
+
+  /*Custom code by ac3Takwas*/
+  font-size: 28px;
 }
 
 .sidebar-about .lead {
@@ -93,6 +97,13 @@ html {
   border-radius: 50%;
   border: 2px solid #5b8da2;
   max-width: 5rem;
+
+  /*Custom code by ac3Takwas*/
+  background-image: url("../static/img/avatar_acetakwas.jpg");
+  width: 115px;
+  height: auto;
+  background-position: 116px 1px;
+  max-height: 115px;
 }
 
 /* Sidebar nav */
@@ -111,6 +122,13 @@ html {
   float: left;
   width: 17%;
 }
+
+.fa-quora{
+  background-image: url('../static/img/icon_quora.png');
+  background-repeat: no-repeat !important;
+  background-position: center;
+}
+
 a.sidebar-nav-item:hover,
 a.sidebar-nav-item:focus {
   background: #6096ac;
