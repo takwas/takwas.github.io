@@ -80,7 +80,7 @@ html {
 .sidebar-about h1 {
   color: #fff;
   margin-top: 0;
-  font-family: "Abril Fatface", serif;
+  font-family: "Ubuntu", seri;f
   font-size: 3rem;
 
 
@@ -96,14 +96,14 @@ html {
   margin: 0 auto;
   border-radius: 50%;
   border: 2px solid #5b8da2;
-  max-width: 5rem;
+  /*max-width: 5rem; ** Commented-out by ac3Takwas*/
 
   /*Custom code by ac3Takwas*/
   background-image: url("../static/img/avatar_acetakwas.jpg");
-  width: 115px;
+  width: 148px;
   height: auto;
-  background-position: 116px 1px;
-  max-height: 115px;
+  background-position: -11px 1px;
+  /*max-height: 115px;*/
 }
 
 /* Sidebar nav */
@@ -123,11 +123,23 @@ html {
   width: 17%;
 }
 
-.fa-quora{
-  background-image: url('../static/img/icon_quora.png');
+
+/*Custom code by ac3Takwas*/
+.fa-custom{
   background-repeat: no-repeat !important;
   background-position: center;
 }
+
+/*Custom code by ac3Takwas*/
+.fa-quora{
+  background-image: url('../static/img/icon_quora.png');
+}
+
+/*Custom code by ac3Takwas*/
+.fa-goodreads{
+  background-image: url('../static/img/icon_goodreads.png');
+}
+
 
 a.sidebar-nav-item:hover,
 a.sidebar-nav-item:focus {
