@@ -1,3 +1,26 @@
+/*Custom code by ac3Takwas*/
+.fa-custom{
+  background-repeat: no-repeat !important;
+  /*background-position: center;*/
+  margin-left: -1px;
+  padding-left: 17px;
+  font-family: "Open Sans",sans-serif;
+  width: 16px;
+  height: 16px;
+}
+
+/*Custom code by ac3Takwas*/
+.fa-quora{
+  background-image: url('/theme/img/icon_quora.png');
+}
+
+/*Custom code by ac3Takwas*/
+.fa-goodreads{
+  background-image: url('/theme/img/icon_goodreads.png');
+}
+
+
+
 body, input, button, select, textarea, li, .navbar-search .search-query {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
