@@ -61,13 +61,13 @@ So why not arm yourself properly before going to post that question. That way, y
 &lt;hr /&gt;
 &lt;h5&gt;[1] Some Pastebin platforms I use:&lt;/h5&gt;
 &lt;ul&gt;
-&lt;li&gt;http://pastebin.com&lt;/li&gt;
-&lt;li&gt;http://hastebin.com&lt;/li&gt;
-&lt;li&gt;http://paste.ubuntu.com&lt;/li&gt;
-&lt;li&gt;http://pastie.org&lt;/li&gt;
-&lt;li&gt;http://paste.pocoo.org&lt;/li&gt;
-&lt;li&gt;http://paste.pound-python.org&lt;/li&gt;
-&lt;li&gt;http://paste.linux.chat&lt;/li&gt;
+&lt;li&gt;(http://pastebin.com)&lt;/li&gt;
+&lt;li&gt;(http://hastebin.com)&lt;/li&gt;
+&lt;li&gt;(http://paste.ubuntu.com)&lt;/li&gt;
+&lt;li&gt;(http://pastie.org)&lt;/li&gt;
+&lt;li&gt;(http://paste.pocoo.org)&lt;/li&gt;
+&lt;li&gt;(http://paste.pound-python.org)&lt;/li&gt;
+&lt;li&gt;(http://paste.linux.chat)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Then &lt;a href="http://github.com"&gt;Github&lt;/a&gt; provides a platform which supports version-controlled pastes: &lt;a href="http://gist.github/com"&gt;Github Gists&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Because &lt;a href="http://hastebin.com"&gt;Hastebin&lt;/a&gt; heavily depends on Javascript, some people have complained of text-rendering issues possibly arising from browser-compatibility issues with it. So take caution using it. That said, I love its ease-of-use. It supports the use of keyboard shortcuts such as &lt;code&gt;[Ctrl]+[S]&lt;/code&gt; to &lt;strong&gt;Save&lt;/strong&gt;.&lt;/p&gt;</summary><category term="irc"></category><category term="help"></category><category term="programming"></category><category term="beginner"></category><category term="pastebin"></category><category term="documentation"></category><category term="practice"></category><category term="dev"></category><category term="planet"></category></entry></feed>
