@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>reBLOGitations</title><link href="http://takwas.github.io/" rel="alternate"></link><link href="http://takwas.github.io/feeds/dev.atom.xml" rel="self"></link><id>http://takwas.github.io/</id><updated>2015-12-15T12:10:00+01:00</updated><entry><title>To be Forearmed is to be Help-ready</title><link href="http://takwas.github.io/article/readying-for-net-help.html" rel="alternate"></link><updated>2015-12-15T12:10:00+01:00</updated><author><name>Tosin Damilare James Animashaun</name></author><id>tag:takwas.github.io,2015-12-15:article/readying-for-net-help.html</id><summary type="html">&lt;p&gt;I felt compelled to write this after my personal experience trying to get help with my code on IRC.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>acetakwas.log ();</title><link href="http://takwas.github.io/" rel="alternate"></link><link href="http://takwas.github.io/feeds/dev.atom.xml" rel="self"></link><id>http://takwas.github.io/</id><updated>2015-12-15T12:10:00+01:00</updated><entry><title>To be Forearmed is to be Help-ready</title><link href="http://takwas.github.io/article/readying-for-net-help.html" rel="alternate"></link><updated>2015-12-15T12:10:00+01:00</updated><author><name>Tosin Damilare James Animashaun</name></author><id>tag:takwas.github.io,2015-12-15:article/readying-for-net-help.html</id><summary type="html">&lt;p&gt;I felt compelled to write this after my personal experience trying to get help with my code on IRC.&lt;/p&gt;
 &lt;p&gt;We all love to make the computer do things exactly the way we want, so some of us choose to take the bold step of learning to communicate with the machine. And it is not uncommon to find many of our burgeoning kind go from &lt;em&gt;location to location on the web space&lt;/em&gt; trying to get help along the way. We are prompt to ask questions when we sight help.&lt;br /&gt;
 &lt;br/&gt;&lt;/p&gt;
 &lt;blockquote&gt;
@@ -61,13 +61,12 @@ So why not arm yourself properly before going to post that question. That way, y
 &lt;hr /&gt;
 &lt;h5&gt;[1] Some Pastebin platforms I use:&lt;/h5&gt;
 &lt;ul&gt;
-&lt;li&gt;(http://pastebin.com)&lt;/li&gt;
-&lt;li&gt;(http://hastebin.com)&lt;/li&gt;
-&lt;li&gt;(http://paste.ubuntu.com)&lt;/li&gt;
-&lt;li&gt;(http://pastie.org)&lt;/li&gt;
-&lt;li&gt;(http://paste.pocoo.org)&lt;/li&gt;
-&lt;li&gt;(http://paste.pound-python.org)&lt;/li&gt;
-&lt;li&gt;(http://paste.linux.chat)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://pastebin.com"&gt;Pastebin&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://hastebin.com"&gt;Hastebin&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://paste.ubuntu.com"&gt;Ubuntu Pastebin&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://pastie.org"&gt;Pastie&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://paste.pound-python.org"&gt;Spacepaste&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://paste.linux.chat"&gt;##Linux on Freenode&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Then &lt;a href="http://github.com"&gt;Github&lt;/a&gt; provides a platform which supports version-controlled pastes: &lt;a href="http://gist.github/com"&gt;Github Gists&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Because &lt;a href="http://hastebin.com"&gt;Hastebin&lt;/a&gt; heavily depends on Javascript, some people have complained of text-rendering issues possibly arising from browser-compatibility issues with it. So take caution using it. That said, I love its ease-of-use. It supports the use of keyboard shortcuts such as &lt;code&gt;[Ctrl]+[S]&lt;/code&gt; to &lt;strong&gt;Save&lt;/strong&gt;.&lt;/p&gt;</summary><category term="irc"></category><category term="help"></category><category term="programming"></category><category term="beginner"></category><category term="pastebin"></category><category term="documentation"></category><category term="practice"></category><category term="dev"></category><category term="planet"></category></entry></feed>
