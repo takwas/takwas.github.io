@@ -1,5 +1,4 @@
-This is the repository containing 
-for my blog at:
+####This is the repository containing generated content that shows up on my blog.
 
-[ac3Takwas | reBLOGitations](http://takwas.github.io/)
+The blog lives @: [reBLOGitations](http://takwas.github.io/)
 
