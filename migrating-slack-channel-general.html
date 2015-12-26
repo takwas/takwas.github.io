@@ -63,8 +63,7 @@
   
 
   <div>
-    <h1>Slack is Tweak-friendly</h1>
-<blockquote>
+    <blockquote>
 <p>How I migrated the <strong>#general</strong> channel on Slack.</p>
 </blockquote>
 <p><a href="http://slack.com">Slack</a> is a communication platform built for teams. While it is free by default, there are features reserved for paid users. However, the free version already comes with a ton of cool features, and is highly usable as is, especially for teams that are relatively small. My team has stuck with this unpaid version of the application for a few months.</p>
@@ -89,7 +88,7 @@ These limitations notwithstanding, the following explains my approach to tacklin
 <p>Next, I edited the <code>channels.json</code> file in the top-level directory, and changed the name of the channel #general, which contained the messages, to some new name. Then I went and renamed the folder named <code>general</code>, to this new name.</p>
 <p>With this changes in place, I compressed the modified files alongside the unmodified ones into a <em>zip</em> archive, just as they were when they were downloaded from Slack. Slack allows you to <a href="https://get.slack.help/hc/en-us/articles/201748703-Importing-message-history">import</a> this zipped file into your Slack team, which was what I did next.</p>
 <p>During the import, Slack automatically tried to match detected channels (from the import) with existing ones, afterwhich I was presented with a page that showed the mapping suggestions. I simply set it not to map but create new channels instead.</p>
-<p>Upon successful completion of the imports, I went on to delete all the messages in the existing #general channel. Those messages where now the contents of a newly minted channel, created using the new name I previously gave to it. The only things left were:</p>
+<p>Upon successful completion of the imports, I went on to delete all the messages in the existing #general channel. Those messages were now the contents of a newly minted channel, created using the new name I previously gave to it. The only things left were:</p>
 <p>With all these in place, I did two more things:</p>
 <ul>
 <li>I edited and marked the new channel as <em>private</em>, and</li>

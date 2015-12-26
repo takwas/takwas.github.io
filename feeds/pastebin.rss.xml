@@ -8,8 +8,10 @@
 &lt;/blockquote&gt;
 &lt;p&gt;The domain of computer programming or software development is a very practical one. Before now, I had carried this very principle everywhere with me -- in fact, preached it -- but hadn't really put it to use.&lt;/p&gt;
 &lt;p&gt;The thing about learning languages (or technologies) by reading big manuals is that, often times, beginners will approach the process like they would any other literature book. But that is clearly a wrong approach as empirical evidence has shown. You don't read these things to simply stomach them. Instead, you swallow and then post-process. In essence, you ruminate over stuff.&lt;/p&gt;
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;In truth, the only way you can really process what you read is to &lt;strong&gt;try things out and see results for yourself&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;In truth, the only way you can really process what you read is to &lt;strong&gt;try things out and see results for yourself&lt;/strong&gt;.
+&lt;br/&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Weeks ago, while building an app, I visited IRC frequently to ask questions on just about everything that was unclear to me. While this mode of communication and seeking help is encouraged, abuse of it is strongly discouraged. The good guys over on the IRC channels get pissed off when it appears you're boycotting available resources like documentation, preferring to be spoonfed the whole time. (Remember this is not &lt;a href="http://www.quora.com"&gt;Quora&lt;/a&gt;, where the philosophy is for you to ask more and more questions).&lt;/p&gt;
 &lt;p&gt;This was the sort of thing that happened to me when I began &lt;em&gt;flooding&lt;/em&gt; the channels with my persistent querying. Most of the time the IRC folks kept pointing me to the documentation, as workarounds for most of the issues I had were already documented. A lot of things became much clearer when I decided to finally &lt;a href="https://readthedocs.org/"&gt;read-the-docs&lt;/a&gt;.&lt;/p&gt;
