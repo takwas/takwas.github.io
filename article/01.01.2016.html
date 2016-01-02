@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
-  <title>acetakwas.log(); --   Slack is Tweak-friendly
+  <title>acetakwas.log(); --   Life-Log: January 1, 2016
 </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="author" content=""/>
@@ -26,8 +26,8 @@
     <link href="http://takwas.github.io/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="acetakwas.log(); Full RSS Feed"/>
     <link href="http://takwas.github.io/feeds/main.atom.xml" type="application/atom+xml" rel="alternate" title="acetakwas.log(); Atom Feed"/>
     <link href="http://takwas.github.io/feeds/main.rss.xml" type="application/rss+xml" rel="alternate" title="acetakwas.log(); RSS Feed"/>
-    <link href="http://takwas.github.io/feeds/uncategorized.atom.xml" type="application/atom+xml" rel="alternate" title="acetakwas.log(); Categories Atom Feed"/>
-    <link href="http://takwas.github.io/feeds/uncategorized.rss.xml" type="application/rss+xml" rel="alternate" title="acetakwas.log(); Categories RSS Feed"/>
+    <link href="http://takwas.github.io/feeds/life-log.atom.xml" type="application/atom+xml" rel="alternate" title="acetakwas.log(); Categories Atom Feed"/>
+    <link href="http://takwas.github.io/feeds/life-log.rss.xml" type="application/rss+xml" rel="alternate" title="acetakwas.log(); Categories RSS Feed"/>
 </head>
 <body>
   <div class="container">
@@ -59,7 +59,7 @@
     <div class="row">
       <div class=" span9  ">
   <h1>
-    <a href="http://takwas.github.io/article/migrating-slack-channel-general.html" rel="bookmark" title="Permalink to Slack is Tweak-friendly">Slack is Tweak-friendly</a>
+    <a href="http://takwas.github.io/article/01.01.2016.html" rel="bookmark" title="Permalink to Life-Log: January 1, 2016">Life-Log: January 1, 2016</a>
   </h1>
     </div>
   </div>
@@ -68,48 +68,22 @@
   
 
   <div>
-    <blockquote>
-<p>How I migrated the locked default channel on Slack.</p>
-</blockquote>
-<p><a href="http://slack.com">Slack</a> is a communication platform built for teams. While it is free by default, there are features reserved for paid users. However, the free version already comes with a ton of cool features, and is highly usable as is, especially for teams that are relatively small. My team has stuck with this unpaid version of the application for a few months.</p>
-<p>Recently, we decided to have our clients join our Slack team, with some envisaged benefits:</p>
-<ul>
-<li>It would ease the process of keeping the client up-to-date on project progress</li>
-<li>It would bring our clients to our preferred communication platform, bringing them all in one place</li>
-<li>We could leverage some of the many tools available for use with Slack to improve our communication with clients. It's worth noting that Slack is very API friendly.</li>
-</ul>
-<p><br/>
-In doing this, we were presented with a small challenge. All of our previous conversations which had mostly being in the public, general channel, <strong><em>#general</em></strong>, were now open to our newly signed-on client. Some of these conversations obviously included stuff we would rather be more privy about. This meant I had to quickly find a way to <em>migrate</em> -- I chose not to <em>delete</em> -- the messages in the hope that he had not scrolled back through the channel's message log.</p>
-<p>This would have been easier if Slack allowed certain modifications to the default channel named <em>#general</em><sup><strong>[1]</strong></sup>. For instance, Slack prevents the deletion of this channel. On top of that, Slack puts some restrictions on private channels:</p>
-<ul>
-<li>They can't be <a href="https://get.slack.help/hc/en-us/articles/213185307-Deleting-a-channel">deleted, but can be <em>archived</em></a>.</li>
-<li>They can't be changed to <em>public</em> channels even though the reverse is possible.</li>
-</ul>
-<p><br/>
-These limitations notwithstanding, the following explains my approach to tackling the problem.</p>
-<p>First I used Slack's <a href="https://get.slack.help/hc/en-us/articles/201658943-Exporting-your-team-s-Slack-history">export</a> feature to backup all of our conversations, including channel information. A caveat here is, <em>Slack does not include private channels' data with exported data by default</em><sup><strong>[2]</strong></sup>, but thankfully, we hadn't any private rooms at the time.</p>
-<p>Now, Slack exports team data in JSON format, making it very easy to work with. Having downloaded the exported data, I started looking through it for parts that I could tweak.</p>
-<p>There were some top-level (<strong>root folder</strong>) files which included meta-data about users, teams and channels. Then there were also folders for each channel, in which, conversation logs were kept, grouped by days.</p>
-<p>Next, I edited the <code>channels.json</code> file in the top-level directory, and changed the name of the channel <em>#general</em>, which contained the messages, to some new name. Then I went and renamed the folder named <code>general</code>, to this new name.</p>
-<p>With these changes in place, I compressed the modified files alongside the unmodified ones into a <em>zip</em> archive; the original Slack-exported data had come in a zip file as well. Slack allows you to <a href="https://get.slack.help/hc/en-us/articles/201748703-Importing-message-history">import</a> this zip file into your Slack team, which was what I did next.</p>
-<p>During the import, Slack automatically tried to match detected channels (from the import) with existing ones, after-which I was presented with a page that displayed the mapping suggestions. I simply set it not to map but create new channels instead.</p>
-<p>Upon successful completion of the imports, I went on to delete all the messages in the existing <em>#general</em> channel. Those messages were now the contents of a newly minted channel, created using the new name I previously gave to it.</p>
-<p>With all these in place, I did two more things:</p>
-<ul>
-<li>I edited and marked the new channel as <em>private</em>, and</li>
-<li>I welcomed our new client to our Slack space <strong>;) </strong></li>
-</ul>
-<p><br/></p>
-<hr />
-<h5>[1] More on Slack's default channel - #general</h5>
-<ul>
-<li><a href="https://get.slack.help/hc/en-us/articles/201827866-Renaming-the-general-channel">https://get.slack.help/hc/en-us/articles/201827866-Renaming-the-general-channel</a></li>
-<li><a href="https://get.slack.help/hc/en-us/articles/201898998-Setting-default-channels-for-new-users">https://get.slack.help/hc/en-us/articles/201898998-Setting-default-channels-for-new-users</a></li>
-</ul>
-<h5>[2] Exporting private data from Slack</h5>
-<ul>
-<li><a href="https://get.slack.help/hc/en-us/articles/204897248-Understanding-Slack-data-exports">https://get.slack.help/hc/en-us/articles/204897248-Understanding-Slack-data-exports</a></li>
-</ul>
+    <p>01.01.2016</p>
+<p>The year 2016 kicked off on a rather normal note. Last night, a few hours before 12AM, we (me and my aunt's family) were at the church. Church service lasted till just after new year -- about 12.20AM</p>
+<p>We got home and I broke my day-long food break (no pun intended). I had some malt (Amstel Malta) -- I didn't get one to buy at the time we left church. I would later refuse to take any of the fizzy drinks offered during lunch because of this; plus I felt my aunt might not have been pleased I took one of the malt drinks (there were four cans, and I had one of them) in the refrigerator -- and milk (Hollandia Milk, sold for 130 naira). We had prayers, and then it was the next meal round for me. I had some <em>garri</em> and chicken, which of course, my aunt handed me.</p>
+<p>This morning, getting up at about 6AM, we kick started the day. We were to attend church is the practice at my aunt's church. I have partaken in that, the last two years. So I went on to wash the two cars -- my aunts' and her husbands'. We left the house after 9 O'Clock, and when we arrived at the church, it was already 10AM.</p>
+<p>This first-day-of-the-year program is usually geared towards the announcement of a new <strong>anchor</strong> -- something we chant in faith, at the end of every church service, all year round. Amongst other things, the anchor's declaration is usually preceded by about three prophecies. And so it was today. The announcement came in the third: <strong>"O God: Thou art my HELP, and my DELIVERER"</strong>; a declaration drawn out of Psalm 70 vs 5.</p>
+<p>With the rest of the family, I left the church after 4PM, after having stayed in traffic for about an hour. We had left Folabi and Dapo -- two of my cousins -- at the church. They would much later, much to their surprise, find their way home themselves.</p>
+<p>At home, I got a call from my pastor to check up on his phone, and help fix an issue. Alas, the issue was that his newly installed Skype app wasn't connecting to the internet, and was displaying an "offline" status. When, I got there, it just worked without me touching it.</p>
+<p>Next was his wife.</p>
+<p>I recently helped purchase a new smartphone for my pastor's wife, and offered to help diagnose her laggy old phone.</p>
+<p>These were the activities that took up most of my evening, even until just before now (current system time: 21.54) that I'm writing this.</p>
+<p>I am hoping to hack some code tonight, but there is no power supply at the moment; this battery'll only last a while.</p>
+<p>As part of my plans for 2016, I hope to read a paper a day as a way to become ever more read and deepen my insight in my autodidactic journey. I haven't read any today, but I found some <a href="https://github.com/papers-we-love/papers-we-love">very awesome resource on Github</a>.</p>
+<p>I am crowdsourcing for paper suggestions. You can contribute your to-read paper/essay suggestions in the comments. I also have this question on Quora: </p>
+<p>Speaking of Quora, I found <a href="https://www.quora.com/profile/Obinna-Okechukwu">this really interesting profile</a> on Quora minutes after returning from the new year cross-over church service. He has a <a href="https://tcsnotes.quora.com/">Quora-hosted blog</a>, where he reviews or puts details of Computer Science papers.</p>
+<p>And there was <a href="https://www.quora.com/profile/James-L-Moyer?share=1">this other guy</a> -- creator of <a href="http://www.TheAutodidactLife.com">AutodidactLife</a> -- who encouraged me to read transcripts of TED talks. His answers on Quora show that he has some insightful knowledge on autodidactism.</p>
+<p>More personally, I didn't speak with my mum today, but I did call my grandma and sister. My sister is with a cousin (Aunt Ladun) for the new year.</p>
   </div>
 
 
@@ -117,9 +91,9 @@ These limitations notwithstanding, the following explains my approach to tacklin
       <div id="disqus_thread"></div>
       <script type="text/javascript">
         var disqus_shortname = 'acetakwas-log';
-        var disqus_identifier = "article/migrating-slack-channel-general.html";
-        var disqus_title = "Slack is Tweak-friendly";
-        var disqus_url = "http://takwas.github.io/article/migrating-slack-channel-general.html";
+        var disqus_identifier = "article/01.01.2016.html";
+        var disqus_title = "Life-Log: January 1, 2016";
+        var disqus_url = "http://takwas.github.io/article/01.01.2016.html";
         (function() {
           var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
           dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
@@ -133,21 +107,22 @@ These limitations notwithstanding, the following explains my approach to tacklin
     <div class="span3">
   <div class="well">
 
-    <p><abbr class="fa fa-calendar" title="2015-12-25T23:23:00+01:00"> Fri 25 December 2015</abbr></p>
+    <p><abbr class="fa fa-calendar" title="2016-01-01T22:00:00+01:00"> Fri 01 January 2016</abbr></p>
 
       <p><address class="fa fa-user"> By <a href="http://takwas.github.io/author/tosin-damilare-james-animashaun.html" rel="author">Tosin Damilare James Animashaun</a></address></p>
 
     <hr/>
 
       <p>
-              <a href="http://takwas.github.io/category/uncategorized.html" rel="tag tooltip" class="label label-info" data-placement="right" data-original-title="2 articles in this category">Uncategorized</a>
-            <a href="/tag/planet.html" rel="tooltip" class="label" data-placement="right" data-original-title="2 articles with this tag">planet</a>
-            <a href="/tag/communication.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">communication</a>
-            <a href="/tag/general.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">general</a>
-            <a href="/tag/json.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">json</a>
-            <a href="/tag/configuration.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">configuration</a>
-            <a href="/tag/slack.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">slack</a>
-            <a href="/tag/backup.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">backup</a>
+              <a href="http://takwas.github.io/category/life-log.html" rel="tag tooltip" class="label label-info" data-placement="right" data-original-title="1 article in this category">Life Log</a>
+            <a href="/tag/family.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">family</a>
+            <a href="/tag/life.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">life</a>
+            <a href="/tag/church.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">church</a>
+            <a href="/tag/fast.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">fast</a>
+            <a href="/tag/first-day.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">first day</a>
+            <a href="/tag/journal.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">journal</a>
+            <a href="/tag/diary.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">diary</a>
+            <a href="/tag/january.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">january</a>
       </p>
       <hr/>
 
@@ -231,7 +206,7 @@ These limitations notwithstanding, the following explains my approach to tacklin
           <li><a href="http://takwas.github.io/categories.html"><i class="fa-li fa fa-tags"></i> Categories</a></li>
           <li><a href="http://takwas.github.io/archives.html"><i class="fa-li fa fa-calendar"></i> Dates</a></li>
           <li><a href="http://takwas.github.io/tags.html"><i class="fa-li fa fa-tag"></i> Tags</a></li>
-          <li><a href="http://takwas.github.io/feeds/uncategorized.atom.xml"><i class="fa-li fa fa-rss"></i> Feed</a></li>
+          <li><a href="http://takwas.github.io/feeds/life-log.atom.xml"><i class="fa-li fa fa-rss"></i> Feed</a></li>
       </ul>
     </div>
    
