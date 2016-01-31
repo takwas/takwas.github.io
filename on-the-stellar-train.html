@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
-  <title>acetakwas.log(); --   Slack is Tweak-friendly
+  <title>acetakwas.log(); --   On the Stellar Train!
 </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="author" content=""/>
@@ -55,7 +55,7 @@
     <div class="row">
       <div class=" span9  ">
   <h1>
-    <a href="./migrating-slack-channel-general.html" rel="bookmark" title="Permalink to Slack is Tweak-friendly">Slack is Tweak-friendly</a>
+    <a href="./on-the-stellar-train.html" rel="bookmark" title="Permalink to On the Stellar Train!">On the Stellar Train!</a>
   </h1>
     </div>
   </div>
@@ -64,48 +64,44 @@
   
 
   <div>
-    <blockquote>
-<p>How I migrated the locked default channel on Slack.</p>
+    <p>Two days ago, I attended Stellar.org's fireside chat at the <a href="">Idea Hub</a> in Lagos. It was an enlightening event; one that may well be my gateway into the world of open source in the year.</p>
+<p>No doubt this will present a somewhat steep learning curve knowing that my background in finance (and FinTech) is not much to write home about. The experience and payoffs will of course be worth the while and I am expecting more developers to join the train as the platform is still very welcoming at this point.</p>
+<p>Stellar is a fairly new financial technology service that aims to be the de facto way in which we move money around.</p>
+<p>From Stellar's FAQ page,</p>
+<blockquote>
+<p>"Stellar is a decentralized protocol you can use to send and receive money in any pair of currencies. So for example, the protocol supports sending money in dollars and having it arrive in pesos."</p>
 </blockquote>
-<p><a href="http://slack.com">Slack</a> is a communication platform built for teams. While it is free by default, there are features reserved for paid users. However, the free version already comes with a ton of cool features, and is highly usable as is, especially for teams that are relatively small. My team has stuck with this unpaid version of the application for a few months.</p>
-<p>Recently, we decided to have our clients join our Slack team, with some envisaged benefits:</p>
-<ul>
-<li>It would ease the process of keeping the client up-to-date on project progress</li>
-<li>It would bring our clients to our preferred communication platform, bringing them all in one place</li>
-<li>We could leverage some of the many tools available for use with Slack to improve our communication with clients. It's worth noting that Slack is very API friendly.</li>
-</ul>
-<p><br/>
-In doing this, we were presented with a small challenge. All of our previous conversations which had mostly being in the public, general channel, <strong><em>#general</em></strong>, were now open to our newly signed-on client. Some of these conversations obviously included stuff we would rather be more privy about. This meant I had to quickly find a way to <em>migrate</em> -- I chose not to <em>delete</em> -- the messages in the hope that he had not scrolled back through the channel's message log.</p>
-<p>This would have been easier if Slack allowed certain modifications to the default channel named <em>#general</em><sup><strong>[1]</strong></sup>. For instance, Slack prevents the deletion of this channel. On top of that, Slack puts some restrictions on private channels:</p>
-<ul>
-<li>They can't be <a href="https://get.slack.help/hc/en-us/articles/213185307-Deleting-a-channel">deleted, but can be <em>archived</em></a>.</li>
-<li>They can't be changed to <em>public</em> channels even though the reverse is possible.</li>
-</ul>
-<p><br/>
-These limitations notwithstanding, the following explains my approach to tackling the problem.</p>
-<p>First I used Slack's <a href="https://get.slack.help/hc/en-us/articles/201658943-Exporting-your-team-s-Slack-history">export</a> feature to backup all of our conversations, including channel information. A caveat here is, <em>Slack does not include private channels' data with exported data by default</em><sup><strong>[2]</strong></sup>, but thankfully, we hadn't any private rooms at the time.</p>
-<p>Now, Slack exports team data in JSON format, making it very easy to work with. Having downloaded the exported data, I started looking through it for parts that I could tweak.</p>
-<p>There were some top-level (<strong>root folder</strong>) files which included meta-data about users, teams and channels. Then there were also folders for each channel, in which, conversation logs were kept, grouped by days.</p>
-<p>Next, I edited the <code>channels.json</code> file in the top-level directory, and changed the name of the channel <em>#general</em>, which contained the messages, to some new name. Then I went and renamed the folder named <code>general</code>, to this new name.</p>
-<p>With these changes in place, I compressed the modified files alongside the unmodified ones into a <em>zip</em> archive; the original Slack-exported data had come in a zip file as well. Slack allows you to <a href="https://get.slack.help/hc/en-us/articles/201748703-Importing-message-history">import</a> this zip file into your Slack team, which was what I did next.</p>
-<p>During the import, Slack automatically tried to match detected channels (from the import) with existing ones, after-which I was presented with a page that displayed the mapping suggestions. I simply set it not to map but create new channels instead.</p>
-<p>Upon successful completion of the imports, I went on to delete all the messages in the existing <em>#general</em> channel. Those messages were now the contents of a newly minted channel, created using the new name I previously gave to it.</p>
-<p>With all these in place, I did two more things:</p>
-<ul>
-<li>I edited and marked the new channel as <em>private</em>, and</li>
-<li>I welcomed our new client to our Slack space <strong>;) </strong></li>
-</ul>
 <p><br/></p>
-<hr />
-<h5>[1] More on Slack's default channel - #general</h5>
+<p>I particularly like the analogy used <a href="https://techpoint.ng/2016/01/28/how-stellar-kickstart-nigeria-payments-revolution/">here</a> by the Executive Director of Stellar, Joyce Kim,</p>
+<blockquote>
+<p>"The Stellar platform functions a lot like email whose underlying protocol is SMTP. Before SMTP, you could only email people that were in the same company, network or ISP as you"</p>
+</blockquote>
+<p><br/>
+She says it would be a lot like being able to send mails across different mail providers.</p>
+<p>Most of the details of the workings of Stellar are still very unclear to me, but a few things I've been able to make sense of include:</p>
 <ul>
-<li><a href="https://get.slack.help/hc/en-us/articles/201827866-Renaming-the-general-channel">https://get.slack.help/hc/en-us/articles/201827866-Renaming-the-general-channel</a></li>
-<li><a href="https://get.slack.help/hc/en-us/articles/201898998-Setting-default-channels-for-new-users">https://get.slack.help/hc/en-us/articles/201898998-Setting-default-channels-for-new-users</a></li>
+<li>
+<p>Stellar operates on a decentralized network of servers</p>
+</li>
+<li>
+<p>Stellar maintains an open digital ledger of transactions. This data is synchronized on all servers.</p>
+</li>
+<li>
+<p>Financial institutions subscribed to the Stellar service (called gateways, and to act as "trust" houses) can offer Stellar credits.</p>
+</li>
+<li>
+<p>Stellar credits are used to resolve currency pairing issues.</p>
+</li>
+<li>
+<p>A Consensus is how Stellar verifies the credibility of a transaction before allowing it to pull through.</p>
+</li>
 </ul>
-<h5>[2] Exporting private data from Slack</h5>
-<ul>
-<li><a href="https://get.slack.help/hc/en-us/articles/204897248-Understanding-Slack-data-exports">https://get.slack.help/hc/en-us/articles/204897248-Understanding-Slack-data-exports</a></li>
-</ul>
+<p>Stellar.org provides an <em><a href="https://www.stellar.org/learn/explainers/">explain</a></em> page to describe these concepts. However, I find <a href="http://thenextweb.com/insider/2014/08/01/stellar-open-source-solution-international-money-transfers-currency/">this article</a> very explanatory.</p>
+<p><br/></p>
+<p>I have joined Stellar's public <a href="http://stellar-public.slack.com">Slack team</a>. And so far, I've been received with warm arms. I encourage many budding programmers lookig to get their feet wet with open source projects to join this platform and make some contributions. The mantra for me is "even if it fails..." I think this says enough already.</p>
+<p>At the moment, the project I'm looking to contribute to is the <a href="https://github.com/StellarCN/py-stellar-base">Python library</a> for interfacing with the <a href="https://github.com/stellar/stellar-core">Stellar core</a>.</p>
+<p>This project is still in beta form and could readily use some help. It was suggested to me by Scott Fleckenstein (<a href="https://twitter.com/nullstyle">@nullstyle</a>), the first Engineer at Stellar. At the event, Scott tried to work us through the technical nitty-gritties: innerworkings, stack and how-to-get-started with contributing to the Stellar project. </p>
+<p>These are just some of the things I have been able to wrap my mind around thus far. I am optimistic that once I tie myself in the loop of working on the code and working with the leads I get from time to time, it would all clear out in due course.</p>
   </div>
 
 
@@ -114,7 +110,7 @@ These limitations notwithstanding, the following explains my approach to tacklin
     <div class="span3">
   <div class="well">
 
-    <p><abbr class="fa fa-calendar" title="2015-12-25T23:23:00+01:00"> Fri 25 December 2015</abbr></p>
+    <p><abbr class="fa fa-calendar" title="2016-01-31T19:00:00+01:00"> Sun 31 January 2016</abbr></p>
 
       <p><address class="fa fa-user"> By <a href="./author/tosin-damilare-james-animashaun.html" rel="author">Tosin Damilare James Animashaun</a></address></p>
 
@@ -123,12 +119,11 @@ These limitations notwithstanding, the following explains my approach to tacklin
       <p>
               <a href="./category/uncategorized.html" rel="tag tooltip" class="label label-info" data-placement="right" data-original-title="6 articles in this category">Uncategorized</a>
             <a href="/tag/planet.html" rel="tooltip" class="label" data-placement="right" data-original-title="4 articles with this tag">planet</a>
-            <a href="/tag/communication.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">communication</a>
-            <a href="/tag/general.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">general</a>
-            <a href="/tag/configuration.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">configuration</a>
-            <a href="/tag/json.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">json</a>
-            <a href="/tag/slack.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">slack</a>
-            <a href="/tag/backup.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">backup</a>
+            <a href="/tag/crytocurrency.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">crytocurrency</a>
+            <a href="/tag/stellar.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">stellar</a>
+            <a href="/tag/open-source.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">open-source</a>
+            <a href="/tag/altcoin.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">altcoin</a>
+            <a href="/tag/project.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">project</a>
       </p>
       <hr/>
 
