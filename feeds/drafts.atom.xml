@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>acetakwas.log(); - drafts</title><link href="https://tosinmash.com/" rel="alternate"></link><link href="https://tosinmash.com/feeds/drafts.atom.xml" rel="self"></link><id>https://tosinmash.com/</id><updated>2019-04-07T13:00:00+01:00</updated><entry><title>&gt;&gt;&gt; pyconweb.talks.select_speaker('acetakwas')</title><link href="https://tosinmash.com/goto-pyconweb.html" rel="alternate"></link><published>2019-04-07T13:00:00+01:00</published><updated>2019-04-07T13:00:00+01:00</updated><author><name>Tosin Damilare James Animashaun</name></author><id>tag:tosinmash.com,2019-04-07:/goto-pyconweb.html</id><summary type="html">&lt;p&gt;Logging my way to München!&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://pyconweb.com/talks/26-05-2019/werkzeug-whats-in-it-for-me"&gt;Come 26th May, 2019&lt;/a&gt;, 
+I will be giving a talk on one of the nifty tools that exist in the arsenal of 
+the &lt;a href="https://palletsprojects.com/"&gt;Pallets Projects&lt;/a&gt;: &lt;strong&gt;Werkzeug.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://palletsprojects.com/p/werkzeug/"&gt;Werkeug&lt;/a&gt;, which I'd much rather refer 
+to as the WSGI swiss-army knife, is one of those brilliant pieces of software 
+out there that get little attention. I'd say that the fame of Flask 
+is responsible in the case of Werkzeug.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://lucumr.pocoo.org/about/"&gt;Armin Ronacher&lt;/a&gt;, whom I adore so much, created 
+this in YEAR in a bid to XXX.&lt;/p&gt;
+&lt;p&gt;My talk is titled: &lt;strong&gt;Werkzeug: What's in it for me?&lt;/strong&gt; You can pretty much think 
+of it as an introduction to the good parts of the toolset Werkzeug. Yes, 
+&lt;em&gt;toolset&lt;/em&gt;, because it is more of a toolset than a tool.&lt;/p&gt;
+&lt;p&gt;If you have used Flask, then you have certainly used Werkzeug. But the 
+distinction must be made that, while Flask is a framework, Werkzeug is a library.&lt;/p&gt;
+&lt;p&gt;PyConWeb is a niche PyCon event. So rather than be a generic PyCon event like 
+many others, the organisers have chosen to take a rather different and 
+interesting approach by narrowing the scope of the event to web technologies.&lt;/p&gt;</content><category term="talk"></category><category term="conference"></category><category term="presentation"></category><category term="werkzeug"></category><category term="pallets"></category><category term="pocoo"></category><category term="public-speaking"></category></entry></feed>

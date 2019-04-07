@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>>>> pyconweb.talks.select_speaker('acetakwas') -- acetakwas.log();</title>
+
+    <link rel="stylesheet" href="http://takwas.github.io/theme/css/main.css">
+    <link rel="stylesheet" href="http://takwas.github.io/theme/css/pygment_trac.css">
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css"/>-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Social Media Buttons Dependency -->
+    <script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5ca9ba91fb6af900122ed61e&product='inline-share-buttons' async='async'></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div><img src="http://www.gravatar.com/avatar/3d4c041c3ef7bc6767adf99ed664510a?s=160" class="grv-img"/></div>
+        <div class="title"><a href="http://takwas.github.io/">acetakwas.log(); </a></div>
+<!--        <div class="sub-title">-->
+<!--          <pre><code class="Python">while True: print    <strong>\</strong></code></pre>-->
+
+<!--        </div>-->
+
+<p>
+    <div class="view"><a href="http://takwas.github.io/about">TosinMash</a></div>
+  <div class="view"><a href="http://takwas.github.io/archives.html">Archives</a></div>
+</p>
+
+      </header>
+      <section>
+<section id="content" class="body">
+  <article>
+      <div class="article-title">
+        >>> pyconweb.talks.select_speaker('acetakwas')
+      </div>
+
+    <div class="entry-content">
+<p>
+<small>
+<abbr class="published" title="2019-04-07T13:00:00+01:00">
+  Sun 07 April 2019
+</abbr> | 
+  tags: 
+    <a href="http://takwas.github.io/tag/talk.html">talk</a>, 
+    <a href="http://takwas.github.io/tag/conference.html">conference</a>, 
+    <a href="http://takwas.github.io/tag/presentation.html">presentation</a>, 
+    <a href="http://takwas.github.io/tag/werkzeug.html">werkzeug</a>, 
+    <a href="http://takwas.github.io/tag/pallets.html">pallets</a>, 
+    <a href="http://takwas.github.io/tag/pocoo.html">pocoo</a>, 
+    <a href="http://takwas.github.io/tag/public-speaking.html">public speaking</a>, 
+    <a href="http://takwas.github.io/tag/armin-ronacher.html">armin ronacher</a>, 
+ -- (<a href="http://takwas.github.io/article/goto-pyconweb.html" rel="bookmark">permalink</a>)
+</small>
+</p>      <p>I am not big on festivities or rituals, but this year's Feb-14th day presented me 
+a wonderful "opportunity", which I was quick to seize by the throat. It was an 
+early early-bird tickets announcement. But more importantly, it was also a 
+notification of the closing window on CFPs within the 24 hours to follow.</p>
+<p>For some reason, I felt optimistic about a possible chance to speak, 
+and quickly put together the draft for a talk proposal. To get some external review, 
+I reached out to <a href="https://twitter.com/davidism">davidism</a> on the 
+<a href="https://discord.gg/ZVcuNu">Pallets Projects' Discord server</a>. A few 
+minutes on and I was good to go. </p>
+<p>I submitted, informed the <a href="https://twitter.com/yinye_m">girlfriend</a>, and we kept 
+our phalanges crossed. 12 days later, I got the first feedback. I should 
+commend the organising PyConWeb organising team for being really nice all the 
+way. I got the notification about the accepted talk in another 11 days -- March 
+09, precisely.</p>
+<p>So come <a href="https://pyconweb.com/talks/26-05-2019/werkzeug-whats-in-it-for-me">26th May, 2019</a>, 
+I will be giving a talk on one of the nifty tools that exist in the arsenal of 
+<a href="https://palletsprojects.com/">Pallets Projects</a>: the <strong>Werkzeug</strong> library.</p>
+<p><a href="https://palletsprojects.com/p/werkzeug/">Werkzeug</a>, which I'd much rather refer 
+to as the WSGI swiss-army knife, is one of those brilliant pieces of software 
+out there that have enjoyed little attention. Permit me to blame the 
+unpopularity of Werkzeug on the fame of Flask, which is what most people 
+interface with.</p>
+<p><a href="http://lucumr.pocoo.org/about/">Armin Ronacher</a>, who, over the years, has created 
+an <a href="http://lucumr.pocoo.org/projects/">army of useful tools</a> across a spectrum of 
+language ecosystems (he's a great inspiration), created Werkzeug in 2007. This was 
+three years before the birth of <a href="https://palletsprojects.com/p/flask/">Flask</a>, 
+which built on Werkzeug, has become the quintessential Python microframework 
+for the web.</p>
+<p>My talk is titled: <strong>Werkzeug: What's in it for me?</strong> It will take the audience 
+on a subliminal, revelatory journey that will unearth the most kept secrets of 
+the "underweb". <strong>Okay, not quite. ;)</strong> You can pretty much think of it as a simple 
+introduction to the <em>good parts</em> of the Werkzeug toolset.</p>
+<p>If you have used Flask, then you have certainly used Werkzeug. But the 
+distinction must be made that, while Flask is a framework, Werkzeug is a library.
+While you interact with the Flask API as a developer, Flask talks to the web 
+server quite easily by leveraging the Werkzeug API. </p>
+<p>Werkzeug, on the other hand, cannot be spoken about without the mention of 
+<a href="https://wsgi.readthedocs.io/en/latest/">WSGI</a>, which is, essentially, what it 
+wraps. If you know a thing or two about the early-day struggles with web 
+programming in Python and how WSGI came forth as the silver bullet that 
+alleviated all of our web-server communication problems, then you would be 
+quick to laud the efforts of Armin.</p>
+<p><a href="https://pyconweb.com/">PyConWeb</a>, Munich is a niche PyCon event. So rather than be a 
+generic <a href="http://pycon.org/">PyCon event</a> like many others, the organisers have 
+chosen to take a rather different and interesting approach by narrowing the 
+scope of the event to web technologies. I do not currently know of a more 
+perfect event at which to have a talk on Werkzeug delivered.</p>
+<p>It's an interesting coincidence that the name 
+<a href="https://en.wiktionary.org/wiki/Werkzeug#Etymology">Werkzeug</a> has its roots in 
+the German language, having the meaning "work stuff".</p>
+<p>For now, it's back to prepping for München, for me.</p>
+<p><br/></p>
+<p><em>Liebe Grüße.</em></p>
+<!--<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="acetakwas">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>-->
+    <div class="sharethis-inline-share-buttons"></div>
+
+    </div><!-- /.entry-content -->
+<div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'acetakwas-log'; // required: replace example with your forum shortname
+        var disqus_identifier = "article/goto-pyconweb.html";
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </article>
+</section>
+      </section>
+
+
+      <footer>
+        <!-- Social links -->
+<div class="social">
+<!--<h4>You can find me on:</h4>-->
+<ul>
+<!--    <li><a href="http://github.com/takwas">github</a></li>-->
+    <li><a href="http://github.com/takwas"></a></li>
+<!--    <li><a href="http://ng.linkedin.com/in/acetakwas">linkedin</a></li>-->
+    <li><a href="http://ng.linkedin.com/in/acetakwas"></a></li>
+<!--    <li><a href="http://quora.com/Tosin-Damilare-James-Animashaun">quora</a></li>-->
+    <li><a href="http://quora.com/Tosin-Damilare-James-Animashaun"></a></li>
+<!--    <li><a href="http://goodreads.com/user/show/41177369-tosin-damilare-james-animashaun">goodreads</a></li>-->
+    <li><a href="http://goodreads.com/user/show/41177369-tosin-damilare-james-animashaun"></a></li>
+<!--    <li><a href="http://bitbucket.org/takwas">bitbucket</a></li>-->
+    <li><a href="http://bitbucket.org/takwas"></a></li>
+<!--    <li><a href="http://twitter.com/acetakwas">twitter</a></li>-->
+    <li><a href="http://twitter.com/acetakwas"></a></li>
+</ul>
+
+</div>
+        <p id="copyright-duration">&copy 2015-<span id="currentYear"></span></p>
+        <hr/>
+        <p><strong><a href="./about">Tosin Damilare James Animashaun</a></strong></p>
+        <small>
+          <p>Except where otherwise noted, content on this site is licensed under
+          a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons
+            Attribution 4.0 International license.</a></p>
+          <p>A
+            <a href="https://github.com/getpelican/pelican">Pelican</a>-powered and
+            <a href="https://github.com/keningle/pelican-sundown">Sundown</a>-themed blog.
+          </p>
+        </small>
+      </footer>
+
+    </div>
+    <!-- Scale fix -->
+    <script>
+      var metas = document.getElementsByTagName('meta');
+      var i;
+      
+      if (navigator.userAgent.match(/iPhone/i)) {
+        for (i=0; i<metas.length; i++) {
+          if (metas[i].name == "viewport") {
+            metas[i].content = "width=device-width, minimum-scale=1.0, maximum-scale=1.0";
+          }
+        }
+      
+        document.addEventListener("gesturestart", gestureStart, false);
+      }
+
+      function gestureStart() {
+        for (i=0; i<metas.length; i++) {
+          if (metas[i].name == "viewport") {
+            metas[i].content = "width=device-width, minimum-scale=0.25, maximum-scale=1.6";
+          }
+        }
+      }
+    </script>
+    <script>
+
+      var currentYear = new Date().getFullYear();
+      document.getElementById('currentYear').innerHTML = currentYear;
+    </script>
+
+    <!--For code snippet language-aware highlight support.-->
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>-->
+  </body>
+</html>

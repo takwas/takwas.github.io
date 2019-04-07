@@ -1,84 +1,102 @@
-!function ($) {
-  $(function(){
+// image auto-resize process
+$(document).ready(function () {
+  ImageAutoResize();
+});
 
-    // Activate Bootstrap's tooltips
-    $("[rel*=tooltip]").tooltip();
 
-    // Subnav fixing code from https://github.com/thomaspark/bootswatch/blob/gh-pages/js/application.js
-    var $win = $(window)
-      , $nav = $('.navbar')
-      , navTop = $('.navbar').length && $('.navbar').offset().top
-      , isFixed = 0
-    processScroll()
-    $win.on('scroll', processScroll)
-    function processScroll() {
-      var i, scrollTop = $win.scrollTop()
-      if (scrollTop >= navTop && !isFixed) {
-        isFixed = 1
-        $nav.addClass('navbar-fixed-top')
-      } else if (scrollTop <= navTop && isFixed) {
-        isFixed = 0
-        $nav.removeClass('navbar-fixed-top')
-      }
-    };
+! function ($) {
+  $(function () {
+    //   // Activate Bootstrap's tooltips
+    //   $("[rel*=tooltip]").tooltip();
 
     // Add bootstrap table style to table elements
-    $("#content table").addClass('table').addClass('table-hover');
+    $("article.content table").addClass('table').addClass('table-hover');
 
-    // Allow videos to take the full width of a page
-    $(".container").fitVids();
+    // create tree
+    $('.tree li:has(ul)').addClass('parent_li').find(' > span').attr('title', 'Collapse this branch');
+    $('.tree li.parent_li > span').on('click', function (e) {
+      // var children = $(this).siblings('ul:first').find('> li');
+      var children = $(this).next('ul').find('> li');
+      if (children.is(":visible")) {
+        children.hide('fast');
+        $(this).attr('title', 'Expand this branch').find(' > i').removeClass('fa fa-minus-square-o').addClass('fa fa-plus-square-o');
+      }
+      else {
+        children.show('fast');
+        $(this).attr('title', 'Collapse this branch').find(' > i').removeClass('fa fa-plus-square-o').addClass('fa fa-minus-square-o');
+      }
+      e.stopPropagation();
+    });
 
-    // Apply masonry smart layout, only when all images are loaded
-    // Source: http://stackoverflow.com/a/7257177
-    // TODO: try to hide re-pagination animation
-    // TODO: enhance with bottom animation. See:
-    // https://github.com/codrops/GridLoadingEffects/blob/master/index2.html
-    var masonryref = $('.masonry');
-    if (masonryref.size() > 0) {
-        // Make sure pages that do not define a masonry class continue working
-        var $container = masonryref.masonry();
-        $container.imagesLoaded(function(){
-            $container.masonry({
-                itemSelector: '.thumbnail',
-            });
-        });
+    // static variable counter maker
+
+    function makeCounter() {
+      var count = 1;
+      return function (a) {
+        if (a === 0) {
+          return count;
+        }
+        else {
+          count = count + a;
+          return count;
+        }
+
+      };
     }
 
-    // YouTube URL parser. Source: http://stackoverflow.com/questions/2964678/jquery-youtube-url-validation-with-regex/10315969#10315969
-    function parse_youtube_url(url) {
-      var p = /^(?:https?:\/\/)?(?:www\.)?(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))((\w|-){11})(?:\S+)?$/;
-      return (url.match(p)) ? RegExp.$1 : false;
-    };
-
-    // Activate zoom on content images in the main column and add an icon overlay (but ignore icons)
-    $("#content img:not(.icon)").each(function(){
-      // Until we properly generate thumbnails and their links on Pelican's side, we just link an image to itself.
-      if ($(this).parents('a').length == 0) {
-        $(this).wrap(
-          $('<a/>').attr('href', $(this).attr('src'))
-        );
-      };
-      // Add a special class for images linking to videos
-      var link_tag = $(this).closest('a');
-      if (parse_youtube_url(link_tag.attr('href')) != false) {
-        link_tag.addClass("video");
-      } else {
-        // Activate zoom popup
-        link_tag.magnificPopup({
-          type: 'image',
-          closeOnContentClick: true,
-          midClick: true,
-          mainClass: 'mfp-with-zoom',
-          zoom: {
-            enabled: true,
-            duration: 300,
-            easing: 'ease-in-out',
-          },
+    // ajax-like load blog index
+    var counter = makeCounter();
+    var index_num = counter(0);
+    var POST_LIMIT = 3;
+    var POST_COUNT = parseInt($('#blog_main_area').attr('count'), 10);
+    $('#prev').on('click', function (e) {
+      index_num -= 1;
+      if (index_num === 0) {
+        index_num = 1;
+        $(this).addClass('disabled');
+      }
+      else {
+        $('#next').removeClass('disabled');
+        $('#blog_main_area div.item').each(function () {
+          if ($(this).is(':visible')) {
+            $(this).hide('slow');
+          }
         });
-      };
-      // Add overlay zoom icon
-      $(this).mglass({opacity: 1,});
+
+        $('#blog_main_area div.item').slice((index_num - 1) * POST_LIMIT, (index_num) * POST_LIMIT).each(function () {
+          $(this).show('slow');
+        });
+
+        if (index_num === 1) {
+          $(this).addClass('disabled');
+        }
+      }
+
     });
+    $('#next').on('click', function (e) {
+      index_num += 1;
+      $('#prev').removeClass('disabled');
+
+      if (index_num * POST_LIMIT <= POST_COUNT + POST_LIMIT) {
+        $('#blog_main_area div.item').each(function () {
+          if ($(this).is(':visible')) {
+            $(this).hide('slow');
+          }
+        });
+
+        $('#blog_main_area div.item').slice((index_num - 1) * POST_LIMIT, (index_num) * POST_LIMIT).each(function () {
+          $(this).show('slow');
+        });
+      }
+
+      if (index_num * POST_LIMIT >= POST_COUNT) {
+        $(this).addClass('disabled');
+        index_num = Math.ceil(POST_COUNT / POST_LIMIT);
+      }
+    });
+
+
+
 
   });
 }(window.jQuery);

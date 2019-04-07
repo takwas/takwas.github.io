@@ -1,5 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>acetakwas.log(); - documentation</title><link href="http://takwas.github.io/" rel="alternate"></link><link href="http://takwas.github.io/feeds/documentation.atom.xml" rel="self"></link><id>http://takwas.github.io/</id><updated>2015-12-15T12:10:00+01:00</updated><entry><title>To be Forearmed is to be Help-ready</title><link href="http://takwas.github.io/article/readying-for-net-help.html" rel="alternate"></link><published>2015-12-15T12:10:00+01:00</published><updated>2015-12-15T12:10:00+01:00</updated><author><name>Tosin Damilare James Animashaun</name></author><id>tag:takwas.github.io,2015-12-15:/article/readying-for-net-help.html</id><summary type="html">&lt;p&gt;If you are seeking programming help, then do your homework or your potential helpers might raise eyebrows.&lt;/p&gt;</summary><content type="html">&lt;p&gt;I felt compelled to write this after my personal experience trying to get help with my code on IRC.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>acetakwas.log(); - documentation</title><link href="http://takwas.github.io/" rel="alternate"></link><link href="http://takwas.github.io/feeds/documentation.atom.xml" rel="self"></link><id>http://takwas.github.io/</id><updated>2019-04-07T10:00:00+01:00</updated><entry><title>Not Reading the Docs</title><link href="http://takwas.github.io/article/not-reading-the-docs.html" rel="alternate"></link><published>2019-04-07T10:00:00+01:00</published><updated>2019-04-07T10:00:00+01:00</updated><author><name>Tosin Damilare James Animashaun</name></author><id>tag:takwas.github.io,2019-04-07:/article/not-reading-the-docs.html</id><summary type="html">&lt;p&gt;Make it a point of duty to peruse documentation.&lt;/p&gt;</summary><content type="html">&lt;p&gt;It is a well known fact within our circles that one of the quickest ways to get 
+started with any &lt;em&gt;piece of technology&lt;/em&gt; is to get started using it. This has 
+been proven time and again to be an effective method for kicking off with 
+programming tools.&lt;/p&gt;
+&lt;p&gt;The downside to the above approach is that, if the learner fails to follow up 
+their early success with some studying of the documentation that was created to 
+enrich the knowledge gained, they would have very limited understanding and 
+would likely abuse the technology, not mentioning the myriad of times they 
+would be needlessly stuck with making progress with the technology.&lt;/p&gt;
+&lt;p&gt;Reading documentation has a lot of advantages, some of which are immediately 
+apparent. These include versatility with that technology the documentation is 
+about, clarity of areas that might have seemed hazy to the learner, best 
+practice information as well as something else like it: knowing the right 
+(recommended) way to do a thing with the technology.&lt;/p&gt;
+&lt;p&gt;There are more benefits that await one when the effort is made to peruse the 
+documentation backing some technology. One can better teach a technology or 
+even make a public presentation on it, for instance.&lt;/p&gt;
+&lt;p&gt;Most times, the documentation is written by the author of the project. 
+Based on this, it is safe to say that the author pours out their heart into the 
+writing, often better communicating their design decisions. I have previously 
+quoted &lt;a href="http://lucumr.pocoo.org/about/"&gt;Armin Ronacher&lt;/a&gt; on the importance of 
+gleaning design decision &lt;a href="/readying-for-net-help.html#armin_quote"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The book knowledge cannot be overemphasized.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Programmers need to have this factful statement ingrained as they go on in 
+their &lt;em&gt;creative&lt;/em&gt; journey.&lt;/p&gt;</content><category term="learning"></category><category term="reading"></category><category term="documentation"></category></entry><entry><title>To be Forearmed is to be Help-ready</title><link href="http://takwas.github.io/article/readying-for-net-help.html" rel="alternate"></link><published>2015-12-15T12:10:00+01:00</published><updated>2019-04-06T22:40:00+01:00</updated><author><name>Tosin Damilare James Animashaun</name></author><id>tag:takwas.github.io,2015-12-15:/article/readying-for-net-help.html</id><summary type="html">&lt;p&gt;If you are seeking programming help, then do your homework or your potential helpers might raise eyebrows.&lt;/p&gt;</summary><content type="html">&lt;p&gt;I felt compelled to write this after my personal experience trying to get help with my code on IRC.&lt;/p&gt;
 &lt;p&gt;We all love to make the computer do things exactly the way we want, so some of us choose to take the bold step of learning to communicate with the machine. And it is not uncommon to find many of our burgeoning kind go from &lt;em&gt;location to location on the web space&lt;/em&gt; trying to get help along the way. We are prompt to ask questions when we sight help.&lt;br&gt;
 &lt;br/&gt;&lt;/p&gt;
 &lt;blockquote&gt;
@@ -17,7 +43,7 @@
 &lt;p&gt;This was the sort of thing that happened to me when I began &lt;em&gt;flooding&lt;/em&gt; the channels with my persistent querying. Most of the time the IRC folks kept pointing me to the documentation, as workarounds for most of the issues I had were already documented. A lot of things became much clearer when I decided to finally &lt;a href="https://readthedocs.org/"&gt;read-the-docs&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;What did I learn from that? &lt;strong&gt;"Do your own research!"&lt;/strong&gt; It's so easy to skip this part, but if you make efforts at finding things out for yourself, you'll be surprised at how much you can dig out without having to bug people. However, this does not guarantee that even the few important questions you'll ask may not be met with hostility, but do not let that discourage you. The people who appear to be unwelcoming are doing so only as a way to discourage you from being over-dependent on the channel.
 Another advantage of finding things for yourself is that, you learn the &lt;strong&gt;why&lt;/strong&gt; and not just the &lt;strong&gt;how&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;I think it's fair to quote &lt;a href="http://lucumr.pocoo.org/about/"&gt;Armin Ronacher&lt;/a&gt; here,&lt;/p&gt;
+&lt;p&gt;&lt;span id="armin_quote"&gt;I think it's fair to quote &lt;a href="http://lucumr.pocoo.org/about/"&gt;Armin Ronacher&lt;/a&gt; here,&lt;/span&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;"And it's not just asking questions; questioning other people, like what other people do or what you do yourself.&lt;/p&gt;
 &lt;p&gt;By far, the worst parts in all of my libraries are where I took the design from somewhere else. And it's not because I know better, it's because pretty much everything everybody does at any point in time has some sort of design decision behind it ... that major decision process.&lt;/p&gt;
@@ -63,6 +89,7 @@ So why not arm yourself properly before going to post that question. That way, y
 &lt;hr&gt;
 &lt;h5&gt;[1] Some Pastebin platforms I use:&lt;/h5&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;a href="https://paste.ofcode.org/"&gt;Paste ofCode&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://pastebin.com"&gt;Pastebin&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://hastebin.com"&gt;Hastebin&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://paste.ubuntu.com"&gt;Ubuntu Pastebin&lt;/a&gt;&lt;/li&gt;

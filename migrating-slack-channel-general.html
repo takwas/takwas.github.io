@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Slack is Tweak-friendly -- acetakwas.log();</title>
+
+    <link rel="stylesheet" href="./theme/css/main.css">
+    <link rel="stylesheet" href="./theme/css/pygment_trac.css">
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css"/>-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Social Media Buttons Dependency -->
+    <script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5ca9ba91fb6af900122ed61e&product='inline-share-buttons' async='async'></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div><img src="http://www.gravatar.com/avatar/3d4c041c3ef7bc6767adf99ed664510a?s=160" class="grv-img"/></div>
+        <div class="title"><a href="./">acetakwas.log(); </a></div>
+<!--        <div class="sub-title">-->
+<!--          <pre><code class="Python">while True: print    <strong>\</strong></code></pre>-->
+
+<!--        </div>-->
+
+<p>
+    <div class="view"><a href="./about">TosinMash</a></div>
+  <div class="view"><a href="./archives.html">Archives</a></div>
+</p>
+
+      </header>
+      <section>
+<section id="content" class="body">
+  <article>
+      <div class="article-title">
+        Slack is Tweak-friendly
+      </div>
+
+    <div class="entry-content">
+<p>
+<small>
+<abbr class="published" title="2015-12-25T23:23:00+01:00">
+  Fri 25 December 2015
+</abbr> | 
+  tags: 
+    <a href="./tag/slack.html">slack</a>, 
+    <a href="./tag/configuration.html">configuration</a>, 
+    <a href="./tag/json.html">json</a>, 
+    <a href="./tag/general.html">general</a>, 
+    <a href="./tag/backup.html">backup</a>, 
+    <a href="./tag/communication.html">communication</a>, 
+    <a href="./tag/planet.html">planet</a>, 
+ -- (<a href="./migrating-slack-channel-general.html" rel="bookmark">permalink</a>)
+</small>
+</p>      <blockquote>
+<p>How I migrated the locked default channel on Slack.</p>
+</blockquote>
+<p><a href="http://slack.com">Slack</a> is a communication platform built for teams. While it is free by default, there are features reserved for paid users. However, the free version already comes with a ton of cool features, and is highly usable as is, especially for teams that are relatively small. My team has stuck with this unpaid version of the application for a few months.</p>
+<p>Recently, we decided to have our clients join our Slack team, with some envisaged benefits:</p>
+<ul>
+<li>It would ease the process of keeping the client up-to-date on project progress</li>
+<li>It would bring our clients to our preferred communication platform, bringing them all in one place</li>
+<li>We could leverage some of the many tools available for use with Slack to improve our communication with clients. It's worth noting that Slack is very API friendly.</li>
+</ul>
+<p><br/>
+In doing this, we were presented with a small challenge. All of our previous conversations which had mostly being in the public, general channel, <strong><em>#general</em></strong>, were now open to our newly signed-on client. Some of these conversations obviously included stuff we would rather be more privy about. This meant I had to quickly find a way to <em>migrate</em> -- I chose not to <em>delete</em> -- the messages in the hope that he had not scrolled back through the channel's message log.</p>
+<p>This would have been easier if Slack allowed certain modifications to the default channel named <em>#general</em><sup><strong>[1]</strong></sup>. For instance, Slack prevents the deletion of this channel. On top of that, Slack puts some restrictions on private channels:</p>
+<ul>
+<li>They can't be <a href="https://get.slack.help/hc/en-us/articles/213185307-Deleting-a-channel">deleted, but can be <em>archived</em></a>.</li>
+<li>They can't be changed to <em>public</em> channels even though the reverse is possible.</li>
+</ul>
+<p><br/>
+These limitations notwithstanding, the following explains my approach to tackling the problem.</p>
+<p>First I used Slack's <a href="https://get.slack.help/hc/en-us/articles/201658943-Exporting-your-team-s-Slack-history">export</a> feature to backup all of our conversations, including channel information. A caveat here is, <em>Slack does not include private channels' data with exported data by default</em><sup><strong>[2]</strong></sup>, but thankfully, we hadn't any private rooms at the time.</p>
+<p>Now, Slack exports team data in JSON format, making it very easy to work with. Having downloaded the exported data, I started looking through it for parts that I could tweak.</p>
+<p>There were some top-level (<strong>root folder</strong>) files which included meta-data about users, teams and channels. Then there were also folders for each channel, in which, conversation logs were kept, grouped by days.</p>
+<p>Next, I edited the <code>channels.json</code> file in the top-level directory, and changed the name of the channel <em>#general</em>, which contained the messages, to some new name. Then I went and renamed the folder named <code>general</code>, to this new name.</p>
+<p>With these changes in place, I compressed the modified files alongside the unmodified ones into a <em>zip</em> archive; the original Slack-exported data had come in a zip file as well. Slack allows you to <a href="https://get.slack.help/hc/en-us/articles/201748703-Importing-message-history">import</a> this zip file into your Slack team, which was what I did next.</p>
+<p>During the import, Slack automatically tried to match detected channels (from the import) with existing ones, after-which I was presented with a page that displayed the mapping suggestions. I simply set it not to map but create new channels instead.</p>
+<p>Upon successful completion of the imports, I went on to delete all the messages in the existing <em>#general</em> channel. Those messages were now the contents of a newly minted channel, created using the new name I previously gave to it.</p>
+<p>With all these in place, I did two more things:</p>
+<ul>
+<li>I edited and marked the new channel as <em>private</em>, and</li>
+<li>I welcomed our new client to our Slack space <strong>;) </strong></li>
+</ul>
+<p><br/></p>
+<hr>
+<h5>[1] More on Slack's default channel - #general</h5>
+<ul>
+<li><a href="https://get.slack.help/hc/en-us/articles/201827866-Renaming-the-general-channel">https://get.slack.help/hc/en-us/articles/201827866-Renaming-the-general-channel</a></li>
+<li><a href="https://get.slack.help/hc/en-us/articles/201898998-Setting-default-channels-for-new-users">https://get.slack.help/hc/en-us/articles/201898998-Setting-default-channels-for-new-users</a></li>
+</ul>
+<h5>[2] Exporting private data from Slack</h5>
+<ul>
+<li><a href="https://get.slack.help/hc/en-us/articles/204897248-Understanding-Slack-data-exports">https://get.slack.help/hc/en-us/articles/204897248-Understanding-Slack-data-exports</a></li>
+</ul>
+<!--<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="acetakwas">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>-->
+    <div class="sharethis-inline-share-buttons"></div>
+
+    </div><!-- /.entry-content -->
+  </article>
+</section>
+      </section>
+
+
+      <footer>
+        <!-- Social links -->
+<div class="social">
+<!--<h4>You can find me on:</h4>-->
+<ul>
+<!--    <li><a href="http://github.com/takwas">github</a></li>-->
+    <li><a href="http://github.com/takwas"></a></li>
+<!--    <li><a href="http://ng.linkedin.com/in/acetakwas">linkedin</a></li>-->
+    <li><a href="http://ng.linkedin.com/in/acetakwas"></a></li>
+<!--    <li><a href="http://quora.com/Tosin-Damilare-James-Animashaun">quora</a></li>-->
+    <li><a href="http://quora.com/Tosin-Damilare-James-Animashaun"></a></li>
+<!--    <li><a href="http://goodreads.com/user/show/41177369-tosin-damilare-james-animashaun">goodreads</a></li>-->
+    <li><a href="http://goodreads.com/user/show/41177369-tosin-damilare-james-animashaun"></a></li>
+<!--    <li><a href="http://bitbucket.org/takwas">bitbucket</a></li>-->
+    <li><a href="http://bitbucket.org/takwas"></a></li>
+<!--    <li><a href="http://twitter.com/acetakwas">twitter</a></li>-->
+    <li><a href="http://twitter.com/acetakwas"></a></li>
+</ul>
+
+</div>
+        <p id="copyright-duration">&copy 2015-<span id="currentYear"></span></p>
+        <hr/>
+        <p><strong><a href="./about">Tosin Damilare James Animashaun</a></strong></p>
+        <small>
+          <p>Except where otherwise noted, content on this site is licensed under
+          a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons
+            Attribution 4.0 International license.</a></p>
+          <p>A
+            <a href="https://github.com/getpelican/pelican">Pelican</a>-powered and
+            <a href="https://github.com/keningle/pelican-sundown">Sundown</a>-themed blog.
+          </p>
+        </small>
+      </footer>
+
+    </div>
+    <!-- Scale fix -->
+    <script>
+      var metas = document.getElementsByTagName('meta');
+      var i;
+      
+      if (navigator.userAgent.match(/iPhone/i)) {
+        for (i=0; i<metas.length; i++) {
+          if (metas[i].name == "viewport") {
+            metas[i].content = "width=device-width, minimum-scale=1.0, maximum-scale=1.0";
+          }
+        }
+      
+        document.addEventListener("gesturestart", gestureStart, false);
+      }
+
+      function gestureStart() {
+        for (i=0; i<metas.length; i++) {
+          if (metas[i].name == "viewport") {
+            metas[i].content = "width=device-width, minimum-scale=0.25, maximum-scale=1.6";
+          }
+        }
+      }
+    </script>
+    <script>
+
+      var currentYear = new Date().getFullYear();
+      document.getElementById('currentYear').innerHTML = currentYear;
+    </script>
+
+    <!--For code snippet language-aware highlight support.-->
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>-->
+  </body>
+</html>
