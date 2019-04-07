@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>acetakwas.log(); - conference</title><link href="/" rel="alternate"></link><link href="/feeds/conference.atom.xml" rel="self"></link><id>/</id><updated>2019-04-07T13:00:00+01:00</updated><entry><title>&gt;&gt;&gt; pyconweb.talks.select_speaker('acetakwas')</title><link href="/article/goto-pyconweb.html" rel="alternate"></link><published>2019-04-07T13:00:00+01:00</published><updated>2019-04-07T13:00:00+01:00</updated><author><name>Tosin Damilare James Animashaun</name></author><id>tag:None,2019-04-07:/article/goto-pyconweb.html</id><summary type="html">&lt;p&gt;München, München, hier komme ich!&lt;/p&gt;</summary><content type="html">&lt;p&gt;I am not big on festivities or rituals, but this year's Feb-14th day presented me 
+<feed xmlns="http://www.w3.org/2005/Atom"><title>acetakwas.log(); - conference</title><link href="/" rel="alternate"></link><link href="/feeds/conference.atom.xml" rel="self"></link><id>/</id><updated>2019-04-07T23:45:00+01:00</updated><entry><title>&gt;&gt;&gt; pyconweb.talks.select_speaker('acetakwas')</title><link href="/article/goto-pyconweb.html" rel="alternate"></link><published>2019-04-07T13:00:00+01:00</published><updated>2019-04-07T23:45:00+01:00</updated><author><name>Tosin Damilare James Animashaun</name></author><id>tag:None,2019-04-07:/article/goto-pyconweb.html</id><summary type="html">&lt;p&gt;München, München, hier komme ich!&lt;/p&gt;</summary><content type="html">&lt;p&gt;I am not big on festivities or rituals, but this year's Feb-14th day presented me 
 a wonderful "opportunity", which I was quick to seize by the throat. It was an 
 early early-bird tickets announcement. But more importantly, it was also a 
 notification of the closing window on CFPs within the 24 hours to follow.&lt;/p&gt;
@@ -8,9 +8,9 @@ and quickly put together the draft for a talk proposal. To get some external rev
 I reached out to &lt;a href="https://twitter.com/davidism"&gt;davidism&lt;/a&gt; on the 
 &lt;a href="https://discord.gg/ZVcuNu"&gt;Pallets Projects' Discord server&lt;/a&gt;. A few 
 minutes on and I was good to go. &lt;/p&gt;
-&lt;p&gt;I submitted, informed the &lt;a href="https://twitter.com/yinye_m"&gt;girlfriend&lt;/a&gt;, and we kept 
+&lt;p&gt;I submitted, informed the &lt;a href="https://twitter.com/yinye_m"&gt;lady&lt;/a&gt;, and we kept 
 our phalanges crossed. 12 days later, I got the first feedback. I should 
-commend the organising PyConWeb organising team for being really nice all the 
+commend the PyConWeb organising team for being really nice all the 
 way. I got the notification about the accepted talk in another 11 days -- March 
 09, precisely.&lt;/p&gt;
 &lt;p&gt;So come &lt;a href="https://pyconweb.com/talks/26-05-2019/werkzeug-whats-in-it-for-me"&gt;26th May, 2019&lt;/a&gt;, 
@@ -51,4 +51,5 @@ perfect event at which to have a talk on Werkzeug delivered.&lt;/p&gt;
 the German language, having the meaning "work stuff".&lt;/p&gt;
 &lt;p&gt;For now, it's back to prepping for München, for me.&lt;/p&gt;
 &lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Liebe Grüße.&lt;/em&gt;&lt;/p&gt;</content><category term="talk"></category><category term="conference"></category><category term="presentation"></category><category term="werkzeug"></category><category term="pallets"></category><category term="pocoo"></category><category term="public speaking"></category><category term="armin ronacher"></category></entry></feed>
+&lt;p&gt;&lt;em&gt;Liebe Grüße.&lt;/em&gt; &lt;/p&gt;
+&lt;p&gt;&lt;em&gt;TosinMash&lt;/em&gt;&lt;/p&gt;</content><category term="talk"></category><category term="conference"></category><category term="presentation"></category><category term="werkzeug"></category><category term="pallets"></category><category term="pocoo"></category><category term="public speaking"></category><category term="armin ronacher"></category></entry></feed>
