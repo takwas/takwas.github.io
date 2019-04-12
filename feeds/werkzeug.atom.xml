@@ -1,55 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>acetakwas.log(); - werkzeug</title><link href="/" rel="alternate"></link><link href="/feeds/werkzeug.atom.xml" rel="self"></link><id>/</id><updated>2019-04-07T23:45:00+01:00</updated><entry><title>&gt;&gt;&gt; pyconweb.talks.select_speaker('acetakwas')</title><link href="/article/goto-pyconweb.html" rel="alternate"></link><published>2019-04-07T13:00:00+01:00</published><updated>2019-04-07T23:45:00+01:00</updated><author><name>Tosin Damilare James Animashaun</name></author><id>tag:None,2019-04-07:/article/goto-pyconweb.html</id><summary type="html">&lt;p&gt;München, München, hier komme ich!&lt;/p&gt;</summary><content type="html">&lt;p&gt;I am not big on festivities or rituals, but this year's Feb-14th day presented me 
+<feed xmlns="http://www.w3.org/2005/Atom"><title>acetakwas.log(); - werkzeug</title><link href="/" rel="alternate"></link><link href="/feeds/werkzeug.atom.xml" rel="self"></link><id>/</id><updated>2019-04-12T01:30:00+01:00</updated><entry><title>&gt;&gt;&gt; 'acetakwas' in pyconweb.speakers</title><link href="/article/goto-pyconweb.html" rel="alternate"></link><published>2019-04-07T13:00:00+01:00</published><updated>2019-04-12T01:30:00+01:00</updated><author><name>Tosin Damilare James Animashaun</name></author><id>tag:None,2019-04-07:/article/goto-pyconweb.html</id><summary type="html">&lt;p&gt;München, München, hier komme ich!&lt;/p&gt;</summary><content type="html">&lt;p&gt;I am not big on festivities or rituals, but this year's Feb-14th day presented me 
 a wonderful "opportunity", which I was quick to seize by the throat. It was an 
-early early-bird tickets announcement. But more importantly, it was also a 
+&lt;em&gt;early&lt;/em&gt; early-bird-tickets announcement. But more importantly, it was also a 
 notification of the closing window on CFPs within the 24 hours to follow.&lt;/p&gt;
-&lt;p&gt;For some reason, I felt optimistic about a possible chance to speak, 
-and quickly put together the draft for a talk proposal. To get some external review, 
-I reached out to &lt;a href="https://twitter.com/davidism"&gt;davidism&lt;/a&gt; on the 
-&lt;a href="https://discord.gg/ZVcuNu"&gt;Pallets Projects' Discord server&lt;/a&gt;. A few 
-minutes on and I was good to go. &lt;/p&gt;
-&lt;p&gt;I submitted, informed the &lt;a href="https://twitter.com/yinye_m"&gt;lady&lt;/a&gt;, and we kept 
-our phalanges crossed. 12 days later, I got the first feedback. I should 
-commend the PyConWeb organising team for being really nice all the 
-way. I got the notification about the accepted talk in another 11 days -- March 
-09, precisely.&lt;/p&gt;
+&lt;p&gt;For some reason, I felt quite optimistic about a possible chance to speak, and 
+quickly put together the draft for a talk proposal. To get someone to review, I hit 
+&lt;a href="https://discord.gg/ZVcuNu"&gt;Pallets Projects' Discord&lt;/a&gt; and reached out to 
+&lt;a href="https://twitter.com/davidism"&gt;davidism&lt;/a&gt;, who was kind enough to indulge me. A 
+few minutes on and I was good to go; and so it was that I put-in something of a 
+nick-of-time submission.&lt;/p&gt;
+&lt;p&gt;Upon informing &lt;em&gt;the &lt;a href="https://twitter.com/yinye_m"&gt;lady&lt;/a&gt;&lt;/em&gt;, which is customary for 
+me, &lt;em&gt;we reached for cloaks of hope, as we kept our phalanges crossed.&lt;/em&gt; 
+I received the first feedback some 12 days later.&lt;sup&gt;&lt;strong&gt;[1]&lt;/strong&gt;&lt;/sup&gt; And in another 11 days 
+(on March 09), the notification about the talk's selection came in. &lt;em&gt;Woot!&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img alt="Event Program." src="/article/images/pyconweb-program-werkzeug-acetakwas.png"&gt;&lt;/p&gt;
 &lt;p&gt;So come &lt;a href="https://pyconweb.com/talks/26-05-2019/werkzeug-whats-in-it-for-me"&gt;26th May, 2019&lt;/a&gt;, 
-I will be giving a talk on one of the nifty tools that exist in the arsenal of 
+I will be giving a talk on one of the nifty tools contained in the arsenal of 
 &lt;a href="https://palletsprojects.com/"&gt;Pallets Projects&lt;/a&gt;: the &lt;strong&gt;Werkzeug&lt;/strong&gt; library.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://palletsprojects.com/p/werkzeug/"&gt;Werkzeug&lt;/a&gt;, which I'd much rather refer 
 to as the WSGI swiss-army knife, is one of those brilliant pieces of software 
 out there that have enjoyed little attention. Permit me to blame the 
 unpopularity of Werkzeug on the fame of Flask, which is what most people 
 interface with.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://lucumr.pocoo.org/about/"&gt;Armin Ronacher&lt;/a&gt;, who, over the years, has created 
-an &lt;a href="http://lucumr.pocoo.org/projects/"&gt;army of useful tools&lt;/a&gt; across a spectrum of 
-language ecosystems (he's a great inspiration), created Werkzeug in 2007. This was 
+&lt;p&gt;&lt;a href="http://lucumr.pocoo.org/about/"&gt;Armin Ronacher&lt;/a&gt;, whom I admire so much, and 
+who, over the years, has created an &lt;a href="http://lucumr.pocoo.org/projects/"&gt;army of useful tools&lt;/a&gt; 
+across a spectrum of language ecosystems, created Werkzeug in 2007. This was 
 three years before the birth of &lt;a href="https://palletsprojects.com/p/flask/"&gt;Flask&lt;/a&gt;, 
-which built on Werkzeug, has become the quintessential Python microframework 
+which, built on Werkzeug, has become the quintessential Python microframework 
 for the web.&lt;/p&gt;
 &lt;p&gt;My talk is titled: &lt;strong&gt;Werkzeug: What's in it for me?&lt;/strong&gt; It will take the audience 
 on a subliminal, revelatory journey that will unearth the most kept secrets of 
-the "underweb". &lt;strong&gt;Okay, not quite. ;)&lt;/strong&gt; You can pretty much think of it as a simple 
+the "underweb". &lt;em&gt;Okay, not quite. ;)&lt;/em&gt; You can pretty much think of it as a simple 
 introduction to the &lt;em&gt;good parts&lt;/em&gt; of the Werkzeug toolset.&lt;/p&gt;
-&lt;p&gt;If you have used Flask, then you have certainly used Werkzeug. But the 
+&lt;p&gt;If you have ever touched Flask, then you have certainly used Werkzeug. But the 
 distinction must be made that, while Flask is a framework, Werkzeug is a library.
-While you interact with the Flask API as a developer, Flask talks to the web 
+While you might interact with the Flask API as a developer, Flask talks to the web 
 server quite easily by leveraging the Werkzeug API. &lt;/p&gt;
 &lt;p&gt;Werkzeug, on the other hand, cannot be spoken about without the mention of 
 &lt;a href="https://wsgi.readthedocs.io/en/latest/"&gt;WSGI&lt;/a&gt;, which is, essentially, what it 
-wraps. If you know a thing or two about the early-day struggles with web 
-programming in Python and how WSGI came forth as the silver bullet that 
-alleviated all of our web-server communication problems, then you would be 
-quick to laud the efforts of Armin.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://pyconweb.com/"&gt;PyConWeb&lt;/a&gt;, Munich is a niche PyCon event. So rather than be a 
+wraps. Bundling a lot of WSGI utilities out-of-the-box, Werkzeug provides a lot of 
+the core apparatus for building or working-with a Python web framework at the low 
+level. In fact, if you happen to know a thing or two about the early-day 
+struggles with web programming in Python and how WSGI came forth as the silver 
+bullet that alleviated all of our web-server communication problems, then you 
+would be quick to laud the efforts of Armin.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://pyconweb.com/"&gt;PyConWeb, Munich&lt;/a&gt; is a niche PyCon event. So rather than be a 
 generic &lt;a href="http://pycon.org/"&gt;PyCon event&lt;/a&gt; like many others, the organisers have 
 chosen to take a rather different and interesting approach by narrowing the 
 scope of the event to web technologies. I do not currently know of a more 
 perfect event at which to have a talk on Werkzeug delivered.&lt;/p&gt;
-&lt;p&gt;It's an interesting coincidence that the name 
+&lt;p&gt;I have to say that I find it an interesting coincidence that the name 
 &lt;a href="https://en.wiktionary.org/wiki/Werkzeug#Etymology"&gt;Werkzeug&lt;/a&gt; has its roots in 
 the German language, having the meaning "work stuff".&lt;/p&gt;
-&lt;p&gt;For now, it's back to prepping for München, for me.&lt;/p&gt;
+&lt;p&gt;That's it for now. It's back to prepping for München, for me.&lt;/p&gt;
 &lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Liebe Grüße.&lt;/em&gt; &lt;/p&gt;
-&lt;p&gt;&lt;em&gt;TosinMash&lt;/em&gt;&lt;/p&gt;</content><category term="talk"></category><category term="conference"></category><category term="presentation"></category><category term="werkzeug"></category><category term="pallets"></category><category term="pocoo"></category><category term="public speaking"></category><category term="armin ronacher"></category></entry></feed>
+&lt;p&gt;&lt;em&gt;Liebe Grüße,&lt;/em&gt; &lt;/p&gt;
+&lt;p&gt;&lt;em&gt;TosinMash&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h5&gt;[1] Much commendation for the &lt;a href="https://twitter.com/pyconweb"&gt;PyConWeb&lt;/a&gt; organising team for their &lt;em&gt;extreme&lt;/em&gt; niceness all the way.&lt;/h5&gt;</content><category term="talk"></category><category term="conference"></category><category term="presentation"></category><category term="werkzeug"></category><category term="pallets"></category><category term="pocoo"></category><category term="public speaking"></category><category term="armin ronacher"></category><category term="München"></category><category term="Munich"></category><category term="Germany"></category></entry></feed>
