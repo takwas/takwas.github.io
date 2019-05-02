@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>acetakwas.log(); - Tosin Damilare James Animashaun</title><link href="/" rel="alternate"></link><link href="/feeds/tosin-damilare-james-animashaun.atom.xml" rel="self"></link><id>/</id><updated>2019-04-12T01:30:00+01:00</updated><entry><title>&gt;&gt;&gt; 'acetakwas' in pyconweb.speakers</title><link href="/article/goto-pyconweb.html" rel="alternate"></link><published>2019-04-07T13:00:00+01:00</published><updated>2019-04-12T01:30:00+01:00</updated><author><name>Tosin Damilare James Animashaun</name></author><id>tag:None,2019-04-07:/article/goto-pyconweb.html</id><summary type="html">&lt;p&gt;München, München, hier komme ich!&lt;/p&gt;</summary><content type="html">&lt;p&gt;I am not big on festivities or rituals, but this year's Feb-14th day presented me 
+<feed xmlns="http://www.w3.org/2005/Atom"><title>acetakwas.log(); - Tosin Damilare James Animashaun</title><link href="/" rel="alternate"></link><link href="/feeds/tosin-damilare-james-animashaun.atom.xml" rel="self"></link><id>/</id><updated>2019-04-12T01:30:00+01:00</updated><entry><title>&gt;&gt;&gt; 'acetakwas' in pyconweb.speakers</title><link href="/article/goto-pyconweb.html" rel="alternate"></link><published>2019-04-07T13:00:00+01:00</published><updated>2019-04-12T01:30:00+01:00</updated><author><name>Tosin Damilare James Animashaun</name></author><id>tag:None,2019-04-07:/article/goto-pyconweb.html</id><summary type="html">&lt;p&gt;München, München, hier komme ich!&lt;/p&gt;</summary><content type="html">&lt;p&gt;I am not big on festivities or rituals, but this year's &lt;strong&gt;Feb-14th day&lt;/strong&gt; presented me 
 a wonderful "opportunity", which I was quick to seize by the throat. It was an 
 &lt;em&gt;early&lt;/em&gt; early-bird-tickets announcement. But more importantly, it was also a 
 notification of the closing window on 
@@ -7,17 +7,17 @@ notification of the closing window on
 hours to follow.&lt;/p&gt;
 &lt;p&gt;For some reason, I felt quite optimistic about a possible chance to speak, and 
 quickly put together the draft for a talk proposal. To get someone to review, I hit 
-&lt;a href="https://discord.gg/ZVcuNu"&gt;Pallets Projects' Discord&lt;/a&gt; and reached out to 
+&lt;a href="https://discord.gg/J8pyRdj"&gt;Pallets Projects' Discord&lt;/a&gt; and reached out to 
 &lt;a href="https://twitter.com/davidism"&gt;davidism&lt;/a&gt;, who was kind enough to indulge me. A 
 few minutes on and I was good to go; and so it was that I put-in something of a 
 nick-of-time submission.&lt;/p&gt;
 &lt;p&gt;Next, I informed &lt;em&gt;the &lt;a href="https://twitter.com/yinye_m"&gt;lady&lt;/a&gt;&lt;/em&gt;, as I am wont to do. 
-With our phalanges kept crossed, we wrapped up in cloaks of hope. I received 
-the first feedback some 12 days later.&lt;sup&gt;&lt;strong&gt;[1]&lt;/strong&gt;&lt;/sup&gt; Then, in another 11 
+And with our phalanges kept crossed, we wrapped up in cloaks of hope. I received 
+the first feedback some 12 days later.&lt;a href="#footnote"&gt;&lt;sup&gt;&lt;strong&gt;[1]&lt;/strong&gt;&lt;/sup&gt;&lt;/a&gt; Then, in another 11 
 days (on March 09), the notification about the talk's selection arrived. &lt;em&gt;Woot!&lt;/em&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;img alt="Event Program." src="/article/images/pyconweb-program-werkzeug-acetakwas.png"&gt;&lt;/p&gt;
-&lt;p&gt;This means that come &lt;a href="https://pyconweb.com/talks/26-05-2019/werkzeug-whats-in-it-for-me"&gt;26th May, 2019&lt;/a&gt;, 
+&lt;p&gt;This means that come &lt;a href="https://pyconweb.com/#program"&gt;26th May, 2019&lt;/a&gt;[&lt;sup&gt;&lt;strong&gt;[2]&lt;/strong&gt;&lt;/sup&gt;], 
 I will be given some 30 minutes before an audience at &lt;a href="https://pyconweb.com/"&gt;PyConWeb&lt;/a&gt;, 
 for a presentation on one of the nifty tools contained in the arsenal of 
 &lt;a href="https://palletsprojects.com/"&gt;Pallets Projects&lt;/a&gt;: the &lt;strong&gt;Werkzeug&lt;/strong&gt; library.&lt;/p&gt;
@@ -44,9 +44,9 @@ server quite easily by leveraging the Werkzeug API. &lt;/p&gt;
 &lt;a href="https://wsgi.readthedocs.io/en/latest/"&gt;WSGI&lt;/a&gt;, which is, essentially, what it 
 wraps. Bundling a lot of WSGI utilities out-of-the-box, Werkzeug provides a lot of 
 the core apparatus for building or working-with a Python web framework at the low 
-level. In fact, if you happen to know a thing or two about the early-day 
+level. In fact, if you happen to know a thing or two about the &lt;a href=""&gt;early-day 
 struggles with web programming in Python and how WSGI came forth as the silver 
-bullet that alleviated all of our web-server communication problems, then you 
+bullet that alleviated all of our web-server communication problems&lt;/a&gt;, then you 
 would be quick to laud the efforts of Armin.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://pyconweb.com/"&gt;PyConWeb, Munich&lt;/a&gt; is a niche PyCon event. So rather than be a 
 generic &lt;a href="http://pycon.org/"&gt;PyCon event&lt;/a&gt; like many others, the organisers have 
@@ -61,8 +61,17 @@ the German language, having the meaning "work stuff".&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Liebe Grüße,&lt;/em&gt; &lt;/p&gt;
 &lt;p&gt;&lt;em&gt;TosinMash&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h5&gt;[1] Much commendation for the &lt;a href="https://twitter.com/pyconweb"&gt;PyConWeb&lt;/a&gt; organising team for their &lt;em&gt;extreme&lt;/em&gt; niceness all the way.&lt;/h5&gt;</content><category term="talk"></category><category term="conference"></category><category term="presentation"></category><category term="werkzeug"></category><category term="python"></category><category term="pallets"></category><category term="pocoo"></category><category term="public speaking"></category><category term="armin ronacher"></category><category term="München"></category><category term="Munich"></category><category term="Germany"></category></entry><entry><title>Not Reading the Docs</title><link href="/article/not-reading-the-docs.html" rel="alternate"></link><published>2019-04-07T10:00:00+01:00</published><updated>2019-04-07T10:00:00+01:00</updated><author><name>Tosin Damilare James Animashaun</name></author><id>tag:None,2019-04-07:/article/not-reading-the-docs.html</id><summary type="html">&lt;p&gt;Make it a point of duty to peruse documentation.&lt;/p&gt;</summary><content type="html">&lt;p&gt;It is a well known fact within our circles that one of the quickest ways to get 
+&lt;hr id="footnote"/&gt;
+
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Much commendation for the &lt;a href="https://twitter.com/pyconweb"&gt;PyConWeb&lt;/a&gt; organising team for their &lt;em&gt;extreme&lt;/em&gt; niceness all the way.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Direct link to my talk. The link appears to be inconsistently broken: 
+&lt;a href="https://pyconweb.com/talks/26-05-2019/werkzeug-whats-in-it-for-me"&gt;https://pyconweb.com/talks/26-05-2019/werkzeug-whats-in-it-for-me&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</content><category term="talk"></category><category term="conference"></category><category term="presentation"></category><category term="werkzeug"></category><category term="python"></category><category term="pallets"></category><category term="pocoo"></category><category term="public speaking"></category><category term="armin ronacher"></category><category term="München"></category><category term="Munich"></category><category term="Germany"></category></entry><entry><title>Not Reading the Docs</title><link href="/article/not-reading-the-docs.html" rel="alternate"></link><published>2019-04-07T10:00:00+01:00</published><updated>2019-04-07T10:00:00+01:00</updated><author><name>Tosin Damilare James Animashaun</name></author><id>tag:None,2019-04-07:/article/not-reading-the-docs.html</id><summary type="html">&lt;p&gt;Make it a point of duty to peruse documentation.&lt;/p&gt;</summary><content type="html">&lt;p&gt;It is a well known fact within our circles that one of the quickest ways to get 
 started with any &lt;em&gt;piece of technology&lt;/em&gt; is to get started using it. This has 
 been proven time and again to be an effective method for kicking off with 
 programming tools.&lt;/p&gt;
@@ -180,7 +189,7 @@ To encourage members even further, Olabayo read out a recent &lt;a href="https:/
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;strong&gt;and sending an email requesting an invite to:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;and by sending an email requesting an invite to:&lt;/strong&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;python-nigeria@python.org
 &lt;/pre&gt;&lt;/div&gt;</content><category term="meetup"></category><category term="python"></category><category term="python nigeria"></category><category term="mailing list"></category><category term="nigeria"></category><category term="pycon"></category><category term="meeting"></category><category term="slack"></category><category term="planet"></category></entry><entry><title>Ubuntu Africa Calls</title><link href="/article/ubuntu-africa-calls.html" rel="alternate"></link><published>2016-02-01T05:00:00+01:00</published><updated>2016-02-03T14:10:00+01:00</updated><author><name>Tosin Damilare James Animashaun</name></author><id>tag:None,2016-02-01:/article/ubuntu-africa-calls.html</id><summary type="html">&lt;p&gt;Communities drive growth. Ubuntu Africa is for all Linux and Ubuntu users in Africa.&lt;/p&gt;</summary><content type="html">&lt;h4&gt;This post is about the &lt;a href="http://ubuntu-africa.info/"&gt;Ubuntu Africa community's&lt;/a&gt; meeting that held in their &lt;a href="http://ubuntu-africa.info/chat-with-us.html"&gt;IRC channel&lt;/a&gt; on &lt;em&gt;Wednesday the 26th of January, 2016&lt;/em&gt;. You could read the raw logs of the meeting &lt;a href="http://52.17.74.45/freenode-%23ubuntu-africa/2016-01-27-18-31-20.html"&gt;here&lt;/a&gt;, but my guess is that reading logs like that might not be the most enjoyable task for your eyes. So I have tried to make this blog post a more pleasant-for-the-eyes version of it. :)&lt;/h4&gt;
 &lt;hr&gt;
@@ -190,7 +199,7 @@ To encourage members even further, Olabayo read out a recent &lt;a href="https:/
 &lt;p&gt;Looking through the &lt;a href="http://loco.ubuntu.com/teams/"&gt;directory of Ubuntu LoCos&lt;/a&gt;, I find it a little surprising that there are no efforts for an active community in my home country, Nigeria. Many people I have met scarcely even know about &lt;a href="https://help.ubuntu.com/community/InternetRelayChat"&gt;IRC&lt;/a&gt; around here. More so with the coming of &lt;a href="http://slack.com"&gt;Slack&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;My recent foray into the African developer community had informed me about this event a few days earlier.&lt;/p&gt;
 &lt;p&gt;Minutes before the meeting, some users (myself inclusive) had arrived the IRC channel and engaged in discussions while patiently waiting for the scheduled meeting time.&lt;/p&gt;
-&lt;p&gt;The meeting began at the set time. And it was, as it was customary, chaired by a user whom had been elected in the last meeting Naeil Zoueidi (@Na3iL)&lt;sup&gt;&lt;strong&gt;[2]&lt;/strong&gt;&lt;/sup&gt; from Tunisia. The other person who seemed to have some good footing in the house was Miles Sharp (@Kilos)&lt;sup&gt;&lt;strong&gt;[2]&lt;/strong&gt;&lt;/sup&gt; from South Africa.&lt;/p&gt;
+&lt;p&gt;The meeting began at the set time. And it was, as it was customary, chaired by a user whom had been elected in the last meeting Naeil Zoueidi (@Na3iL)&lt;a href="#footnote"&gt;&lt;sup&gt;&lt;strong&gt;[1]&lt;/strong&gt;&lt;/sup&gt;&lt;/a&gt; from Tunisia. The other person who seemed to have some good footing in the house was Miles Sharp (@Kilos)&lt;a href="#footnote"&gt;&lt;sup&gt;&lt;strong&gt;[1]&lt;/strong&gt;&lt;/sup&gt;&lt;/a&gt; from South Africa.&lt;/p&gt;
 &lt;p&gt;Attendees at the meeting came from different African nations including Cameroon (with the highest population and mostly first-timers), Tunisia, South Africa, Ghana, Zimbabwe, RDC and Nigeria.&lt;/p&gt;
 &lt;p&gt;The primary language used during discussion was English. However, Kilos pointed out that if any user struggled with the English language, they could use their own language (most likely French) in the hope that someone would translate for them.&lt;/p&gt;
 &lt;p&gt;&lt;br/&gt;
@@ -235,9 +244,13 @@ Before the meeting, there had been an &lt;a href="https://wiki.ubuntu.com/Africa
 &lt;p&gt;The final motion for the day was for the selection of a date for the next meeting. Someone suggested that this be treated in the &lt;a href="https://launchpad.net/~ubuntu-africa"&gt;mailing list&lt;/a&gt; as a way to get people to use the list. Thus, everyone agreed that the date for next meeting be decided in there.&lt;/p&gt;
 &lt;p&gt;I think the name of the user who came in at this time deserves a mention. It was @d3r1ck -- we didn't get their full identity.&lt;/p&gt;
 &lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h5&gt;[1] The word "nuxers" is a portmanteau of the words "Linux" and "users".&lt;/h5&gt;
-&lt;h5&gt;[2] The nicks don't need the preceeding '@'. It's used here for emphasis.&lt;/h5&gt;</content><category term="irc"></category><category term="ubuntu"></category><category term="africa"></category><category term="ubuntu africa"></category><category term="meeting"></category><category term="project"></category><category term="planet"></category></entry><entry><title>On the Stellar Train!</title><link href="/article/on-the-stellar-train.html" rel="alternate"></link><published>2016-01-31T19:00:00+01:00</published><updated>2016-02-01T11:00:00+01:00</updated><author><name>Tosin Damilare James Animashaun</name></author><id>tag:None,2016-01-31:/article/on-the-stellar-train.html</id><summary type="html">&lt;p&gt;The Stellar project is huge and beginner-friendly. Here is me getting into open source in a big way.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Two days ago, I attended Stellar.org's fireside chat at &lt;a href=""&gt;Idea Hub&lt;/a&gt; in Lagos. It was an enlightening event; one that may well be my gateway into the world of open source in the year.&lt;/p&gt;
+&lt;hr id="footnote"/&gt;
+
+&lt;!--1. The word "nuxers" is a portmanteau of the words "Linux" and "users".--&gt;
+
+&lt;ol&gt;
+&lt;li&gt;IRC nicks do not require a precceeding &lt;strong&gt;'@'&lt;/strong&gt;. It's only used here for emphasis.&lt;/li&gt;
+&lt;/ol&gt;</content><category term="irc"></category><category term="ubuntu"></category><category term="africa"></category><category term="ubuntu africa"></category><category term="meeting"></category><category term="project"></category><category term="planet"></category></entry><entry><title>On the Stellar Train!</title><link href="/article/on-the-stellar-train.html" rel="alternate"></link><published>2016-01-31T19:00:00+01:00</published><updated>2016-02-01T11:00:00+01:00</updated><author><name>Tosin Damilare James Animashaun</name></author><id>tag:None,2016-01-31:/article/on-the-stellar-train.html</id><summary type="html">&lt;p&gt;The Stellar project is huge and beginner-friendly. Here is me getting into open source in a big way.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Two days ago, I attended Stellar.org's fireside chat at &lt;a href=""&gt;Idea Hub&lt;/a&gt; in Lagos. It was an enlightening event; one that may well be my gateway into the world of open source in the year.&lt;/p&gt;
 &lt;p&gt;No doubt this will present a somewhat steep learning curve knowing that my background in finance (and &lt;a href="https://en.wikipedia.org/wiki/Financial_technology"&gt;FinTech&lt;/a&gt;) is not much to write home about. The experience and payoffs will of course be worth the while and I am expecting more developers to join the train as the platform is still very welcoming at this point.&lt;/p&gt;
 &lt;p&gt;Stellar is a fairly new financial technology service that aims to be the de facto way in which we move money around.&lt;/p&gt;
 &lt;p&gt;From Stellar's FAQ page,&lt;/p&gt;
@@ -335,14 +348,14 @@ She says it would be a lot like being able to send mails across different mail p
 &lt;/ul&gt;
 &lt;p&gt;&lt;br/&gt;
 In doing this, we were presented with a small challenge. All of our previous conversations which had mostly being in the public, general channel, &lt;strong&gt;&lt;em&gt;#general&lt;/em&gt;&lt;/strong&gt;, were now open to our newly signed-on client. Some of these conversations obviously included stuff we would rather be more privy about. This meant I had to quickly find a way to &lt;em&gt;migrate&lt;/em&gt; -- I chose not to &lt;em&gt;delete&lt;/em&gt; -- the messages in the hope that he had not scrolled back through the channel's message log.&lt;/p&gt;
-&lt;p&gt;This would have been easier if Slack allowed certain modifications to the default channel named &lt;em&gt;#general&lt;/em&gt;&lt;sup&gt;&lt;strong&gt;[1]&lt;/strong&gt;&lt;/sup&gt;. For instance, Slack prevents the deletion of this channel. On top of that, Slack puts some restrictions on private channels:&lt;/p&gt;
+&lt;p&gt;This would have been easier if Slack allowed certain modifications to the default channel named &lt;em&gt;#general&lt;/em&gt;.&lt;a href="#footnote"&gt;&lt;sup&gt;&lt;strong&gt;[1]&lt;/strong&gt;&lt;/sup&gt;&lt;/a&gt; For instance, Slack prevents the deletion of this channel. On top of that, Slack puts some restrictions on private channels:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;They can't be &lt;a href="https://get.slack.help/hc/en-us/articles/213185307-Deleting-a-channel"&gt;deleted, but can be &lt;em&gt;archived&lt;/em&gt;&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;They can't be changed to &lt;em&gt;public&lt;/em&gt; channels even though the reverse is possible.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;br/&gt;
 These limitations notwithstanding, the following explains my approach to tackling the problem.&lt;/p&gt;
-&lt;p&gt;First I used Slack's &lt;a href="https://get.slack.help/hc/en-us/articles/201658943-Exporting-your-team-s-Slack-history"&gt;export&lt;/a&gt; feature to backup all of our conversations, including channel information. A caveat here is, &lt;em&gt;Slack does not include private channels' data with exported data by default&lt;/em&gt;&lt;sup&gt;&lt;strong&gt;[2]&lt;/strong&gt;&lt;/sup&gt;, but thankfully, we hadn't any private rooms at the time.&lt;/p&gt;
+&lt;p&gt;First I used Slack's &lt;a href="https://get.slack.help/hc/en-us/articles/201658943-Exporting-your-team-s-Slack-history"&gt;export&lt;/a&gt; feature to backup all of our conversations, including channel information. A caveat here is, &lt;em&gt;Slack does not include private channels' data with exported data by default,&lt;/em&gt;&lt;a href="#footnote"&gt;&lt;sup&gt;&lt;strong&gt;[2]&lt;/strong&gt;&lt;/sup&gt;&lt;/a&gt; but thankfully, we hadn't any private rooms at the time.&lt;/p&gt;
 &lt;p&gt;Now, Slack exports team data in JSON format, making it very easy to work with. Having downloaded the exported data, I started looking through it for parts that I could tweak.&lt;/p&gt;
 &lt;p&gt;There were some top-level (&lt;strong&gt;root folder&lt;/strong&gt;) files which included meta-data about users, teams and channels. Then there were also folders for each channel, in which, conversation logs were kept, grouped by days.&lt;/p&gt;
 &lt;p&gt;Next, I edited the &lt;code&gt;channels.json&lt;/code&gt; file in the top-level directory, and changed the name of the channel &lt;em&gt;#general&lt;/em&gt;, which contained the messages, to some new name. Then I went and renamed the folder named &lt;code&gt;general&lt;/code&gt;, to this new name.&lt;/p&gt;
@@ -355,16 +368,23 @@ These limitations notwithstanding, the following explains my approach to tacklin
 &lt;li&gt;I welcomed our new client to our Slack space &lt;strong&gt;;) &lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h5&gt;[1] More on Slack's default channel - #general&lt;/h5&gt;
+&lt;hr id="footnote"/&gt;
+
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;More on Slack's default channel - #general&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://get.slack.help/hc/en-us/articles/201827866-Renaming-the-general-channel"&gt;https://get.slack.help/hc/en-us/articles/201827866-Renaming-the-general-channel&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://get.slack.help/hc/en-us/articles/201898998-Setting-default-channels-for-new-users"&gt;https://get.slack.help/hc/en-us/articles/201898998-Setting-default-channels-for-new-users&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h5&gt;[2] Exporting private data from Slack&lt;/h5&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Exporting private data from Slack&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://get.slack.help/hc/en-us/articles/204897248-Understanding-Slack-data-exports"&gt;https://get.slack.help/hc/en-us/articles/204897248-Understanding-Slack-data-exports&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><category term="slack"></category><category term="configuration"></category><category term="json"></category><category term="general"></category><category term="backup"></category><category term="communication"></category><category term="planet"></category></entry><entry><title>To be Forearmed is to be Help-ready</title><link href="/article/readying-for-net-help.html" rel="alternate"></link><published>2015-12-15T12:10:00+01:00</published><updated>2019-04-06T22:40:00+01:00</updated><author><name>Tosin Damilare James Animashaun</name></author><id>tag:None,2015-12-15:/article/readying-for-net-help.html</id><summary type="html">&lt;p&gt;If you are seeking programming help, then do your homework or your potential helpers might raise eyebrows.&lt;/p&gt;</summary><content type="html">&lt;p&gt;I felt compelled to write this after my personal experience trying to get help with my code on IRC.&lt;/p&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</content><category term="slack"></category><category term="configuration"></category><category term="json"></category><category term="general"></category><category term="backup"></category><category term="communication"></category><category term="planet"></category></entry><entry><title>To be Forearmed is to be Help-ready</title><link href="/article/readying-for-net-help.html" rel="alternate"></link><published>2015-12-15T12:10:00+01:00</published><updated>2019-04-06T22:40:00+01:00</updated><author><name>Tosin Damilare James Animashaun</name></author><id>tag:None,2015-12-15:/article/readying-for-net-help.html</id><summary type="html">&lt;p&gt;If you are seeking programming help, then do your homework or your potential helpers might raise eyebrows.&lt;/p&gt;</summary><content type="html">&lt;p&gt;I felt compelled to write this after my personal experience trying to get help with my code on IRC.&lt;/p&gt;
 &lt;p&gt;We all love to make the computer do things exactly the way we want, so some of us choose to take the bold step of learning to communicate with the machine. And it is not uncommon to find many of our burgeoning kind go from &lt;em&gt;location to location on the web space&lt;/em&gt; trying to get help along the way. We are prompt to ask questions when we sight help.&lt;br&gt;
 &lt;br/&gt;&lt;/p&gt;
 &lt;blockquote&gt;
@@ -397,7 +417,7 @@ Let me remind you of some &lt;strong&gt;tidbits or etiquettes of IRC&lt;/strong&
 &lt;p&gt;Construct your questions well (concise, well written and straight-to-the-point questions are more likely to attract help)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Don't EVER post code in a channel! &lt;a href="https://en.wikipedia.org/wiki/Pastebin"&gt;Pastebin&lt;/a&gt;&lt;sup&gt;&lt;strong&gt;[1]&lt;/strong&gt;&lt;/sup&gt; it and share the link in the channel instead. While at it, don't post your entire code (unless you specifically need to). Post only the relevant portion -- the one you have an issue with. The only exception to this is if the snippet of code is considerably short, say one or two lines.&lt;/p&gt;
+&lt;p&gt;Don't EVER post code in a channel! &lt;a href="https://en.wikipedia.org/wiki/Pastebin"&gt;Pastebin&lt;/a&gt;&lt;a href="#footnote"&gt;&lt;sup&gt;&lt;strong&gt;[1]&lt;/strong&gt;&lt;/sup&gt;&lt;/a&gt; it and share the link in the channel instead. While at it, don't post your entire code (unless you specifically need to). Post only the relevant portion -- the one you have an issue with. The only exception to this is if the snippet of code is considerably short, say one or two lines.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Don't be overly respectful. Yes, dont be too respectful -- &lt;em&gt;cut all the 'Sirs'&lt;/em&gt;. Only be moderately polite.&lt;/p&gt;
@@ -425,9 +445,10 @@ Let me remind you of some &lt;strong&gt;tidbits or etiquettes of IRC&lt;/strong&
 &lt;p&gt;&lt;br/&gt;
 So why not arm yourself properly before going to post that question. That way, you would not only make it easier to get help [for yourself], but you would be better informed.&lt;/p&gt;
 &lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h5&gt;[1] Some Pastebin platforms I use:&lt;/h5&gt;
-&lt;ul&gt;
+&lt;hr id="footnote"/&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Some Pastebin platforms I use:&lt;ul&gt;
 &lt;li&gt;&lt;a href="https://paste.ofcode.org/"&gt;Paste ofCode&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://pastebin.com"&gt;Pastebin&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://hastebin.com"&gt;Hastebin&lt;/a&gt;&lt;/li&gt;
@@ -435,6 +456,8 @@ So why not arm yourself properly before going to post that question. That way, y
 &lt;li&gt;&lt;a href="http://pastie.org"&gt;Pastie&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://paste.pound-python.org"&gt;Spacepaste&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://paste.linux.chat"&gt;##Linux on Freenode&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://gist.github/com"&gt;Github Gists&lt;/a&gt; -- A &lt;a href="http://github.com"&gt;Github&lt;/a&gt;-owned pastebin platform with support for version-controlled pastes.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Then &lt;a href="http://github.com"&gt;Github&lt;/a&gt; provides a platform which supports version-controlled pastes: &lt;a href="http://gist.github/com"&gt;Github Gists&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
 &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Because &lt;a href="http://hastebin.com"&gt;Hastebin&lt;/a&gt; heavily depends on Javascript, some people have complained of text-rendering issues possibly arising from browser-compatibility issues with it. So take caution using it. That said, I love its ease-of-use. It supports the use of keyboard shortcuts such as &lt;code&gt;[Ctrl]+[S]&lt;/code&gt; to &lt;strong&gt;Save&lt;/strong&gt;.&lt;/p&gt;</content><category term="irc"></category><category term="help"></category><category term="programming"></category><category term="beginner"></category><category term="pastebin"></category><category term="documentation"></category><category term="practice"></category><category term="dev"></category><category term="planet"></category></entry></feed>

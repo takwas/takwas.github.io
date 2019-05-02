@@ -11,14 +11,14 @@
 &lt;/ul&gt;
 &lt;p&gt;&lt;br/&gt;
 In doing this, we were presented with a small challenge. All of our previous conversations which had mostly being in the public, general channel, &lt;strong&gt;&lt;em&gt;#general&lt;/em&gt;&lt;/strong&gt;, were now open to our newly signed-on client. Some of these conversations obviously included stuff we would rather be more privy about. This meant I had to quickly find a way to &lt;em&gt;migrate&lt;/em&gt; -- I chose not to &lt;em&gt;delete&lt;/em&gt; -- the messages in the hope that he had not scrolled back through the channel's message log.&lt;/p&gt;
-&lt;p&gt;This would have been easier if Slack allowed certain modifications to the default channel named &lt;em&gt;#general&lt;/em&gt;&lt;sup&gt;&lt;strong&gt;[1]&lt;/strong&gt;&lt;/sup&gt;. For instance, Slack prevents the deletion of this channel. On top of that, Slack puts some restrictions on private channels:&lt;/p&gt;
+&lt;p&gt;This would have been easier if Slack allowed certain modifications to the default channel named &lt;em&gt;#general&lt;/em&gt;.&lt;a href="#footnote"&gt;&lt;sup&gt;&lt;strong&gt;[1]&lt;/strong&gt;&lt;/sup&gt;&lt;/a&gt; For instance, Slack prevents the deletion of this channel. On top of that, Slack puts some restrictions on private channels:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;They can't be &lt;a href="https://get.slack.help/hc/en-us/articles/213185307-Deleting-a-channel"&gt;deleted, but can be &lt;em&gt;archived&lt;/em&gt;&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;They can't be changed to &lt;em&gt;public&lt;/em&gt; channels even though the reverse is possible.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;br/&gt;
 These limitations notwithstanding, the following explains my approach to tackling the problem.&lt;/p&gt;
-&lt;p&gt;First I used Slack's &lt;a href="https://get.slack.help/hc/en-us/articles/201658943-Exporting-your-team-s-Slack-history"&gt;export&lt;/a&gt; feature to backup all of our conversations, including channel information. A caveat here is, &lt;em&gt;Slack does not include private channels' data with exported data by default&lt;/em&gt;&lt;sup&gt;&lt;strong&gt;[2]&lt;/strong&gt;&lt;/sup&gt;, but thankfully, we hadn't any private rooms at the time.&lt;/p&gt;
+&lt;p&gt;First I used Slack's &lt;a href="https://get.slack.help/hc/en-us/articles/201658943-Exporting-your-team-s-Slack-history"&gt;export&lt;/a&gt; feature to backup all of our conversations, including channel information. A caveat here is, &lt;em&gt;Slack does not include private channels' data with exported data by default,&lt;/em&gt;&lt;a href="#footnote"&gt;&lt;sup&gt;&lt;strong&gt;[2]&lt;/strong&gt;&lt;/sup&gt;&lt;/a&gt; but thankfully, we hadn't any private rooms at the time.&lt;/p&gt;
 &lt;p&gt;Now, Slack exports team data in JSON format, making it very easy to work with. Having downloaded the exported data, I started looking through it for parts that I could tweak.&lt;/p&gt;
 &lt;p&gt;There were some top-level (&lt;strong&gt;root folder&lt;/strong&gt;) files which included meta-data about users, teams and channels. Then there were also folders for each channel, in which, conversation logs were kept, grouped by days.&lt;/p&gt;
 &lt;p&gt;Next, I edited the &lt;code&gt;channels.json&lt;/code&gt; file in the top-level directory, and changed the name of the channel &lt;em&gt;#general&lt;/em&gt;, which contained the messages, to some new name. Then I went and renamed the folder named &lt;code&gt;general&lt;/code&gt;, to this new name.&lt;/p&gt;
@@ -31,13 +31,20 @@ These limitations notwithstanding, the following explains my approach to tacklin
 &lt;li&gt;I welcomed our new client to our Slack space &lt;strong&gt;;) &lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h5&gt;[1] More on Slack's default channel - #general&lt;/h5&gt;
+&lt;hr id="footnote"/&gt;
+
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;More on Slack's default channel - #general&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://get.slack.help/hc/en-us/articles/201827866-Renaming-the-general-channel"&gt;https://get.slack.help/hc/en-us/articles/201827866-Renaming-the-general-channel&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://get.slack.help/hc/en-us/articles/201898998-Setting-default-channels-for-new-users"&gt;https://get.slack.help/hc/en-us/articles/201898998-Setting-default-channels-for-new-users&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h5&gt;[2] Exporting private data from Slack&lt;/h5&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Exporting private data from Slack&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://get.slack.help/hc/en-us/articles/204897248-Understanding-Slack-data-exports"&gt;https://get.slack.help/hc/en-us/articles/204897248-Understanding-Slack-data-exports&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><category term="slack"></category><category term="configuration"></category><category term="json"></category><category term="general"></category><category term="backup"></category><category term="communication"></category><category term="planet"></category></entry></feed>
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</content><category term="slack"></category><category term="configuration"></category><category term="json"></category><category term="general"></category><category term="backup"></category><category term="communication"></category><category term="planet"></category></entry></feed>

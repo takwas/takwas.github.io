@@ -75,14 +75,14 @@
 </ul>
 <p><br/>
 In doing this, we were presented with a small challenge. All of our previous conversations which had mostly being in the public, general channel, <strong><em>#general</em></strong>, were now open to our newly signed-on client. Some of these conversations obviously included stuff we would rather be more privy about. This meant I had to quickly find a way to <em>migrate</em> -- I chose not to <em>delete</em> -- the messages in the hope that he had not scrolled back through the channel's message log.</p>
-<p>This would have been easier if Slack allowed certain modifications to the default channel named <em>#general</em><sup><strong>[1]</strong></sup>. For instance, Slack prevents the deletion of this channel. On top of that, Slack puts some restrictions on private channels:</p>
+<p>This would have been easier if Slack allowed certain modifications to the default channel named <em>#general</em>.<a href="#footnote"><sup><strong>[1]</strong></sup></a> For instance, Slack prevents the deletion of this channel. On top of that, Slack puts some restrictions on private channels:</p>
 <ul>
 <li>They can't be <a href="https://get.slack.help/hc/en-us/articles/213185307-Deleting-a-channel">deleted, but can be <em>archived</em></a>.</li>
 <li>They can't be changed to <em>public</em> channels even though the reverse is possible.</li>
 </ul>
 <p><br/>
 These limitations notwithstanding, the following explains my approach to tackling the problem.</p>
-<p>First I used Slack's <a href="https://get.slack.help/hc/en-us/articles/201658943-Exporting-your-team-s-Slack-history">export</a> feature to backup all of our conversations, including channel information. A caveat here is, <em>Slack does not include private channels' data with exported data by default</em><sup><strong>[2]</strong></sup>, but thankfully, we hadn't any private rooms at the time.</p>
+<p>First I used Slack's <a href="https://get.slack.help/hc/en-us/articles/201658943-Exporting-your-team-s-Slack-history">export</a> feature to backup all of our conversations, including channel information. A caveat here is, <em>Slack does not include private channels' data with exported data by default,</em><a href="#footnote"><sup><strong>[2]</strong></sup></a> but thankfully, we hadn't any private rooms at the time.</p>
 <p>Now, Slack exports team data in JSON format, making it very easy to work with. Having downloaded the exported data, I started looking through it for parts that I could tweak.</p>
 <p>There were some top-level (<strong>root folder</strong>) files which included meta-data about users, teams and channels. Then there were also folders for each channel, in which, conversation logs were kept, grouped by days.</p>
 <p>Next, I edited the <code>channels.json</code> file in the top-level directory, and changed the name of the channel <em>#general</em>, which contained the messages, to some new name. Then I went and renamed the folder named <code>general</code>, to this new name.</p>
@@ -95,16 +95,23 @@ These limitations notwithstanding, the following explains my approach to tacklin
 <li>I welcomed our new client to our Slack space <strong>;) </strong></li>
 </ul>
 <p><br/></p>
-<hr>
-<h5>[1] More on Slack's default channel - #general</h5>
+<hr id="footnote"/>
+
+<ol>
+<li>
+<p>More on Slack's default channel - #general</p>
 <ul>
 <li><a href="https://get.slack.help/hc/en-us/articles/201827866-Renaming-the-general-channel">https://get.slack.help/hc/en-us/articles/201827866-Renaming-the-general-channel</a></li>
 <li><a href="https://get.slack.help/hc/en-us/articles/201898998-Setting-default-channels-for-new-users">https://get.slack.help/hc/en-us/articles/201898998-Setting-default-channels-for-new-users</a></li>
 </ul>
-<h5>[2] Exporting private data from Slack</h5>
+</li>
+<li>
+<p>Exporting private data from Slack</p>
 <ul>
 <li><a href="https://get.slack.help/hc/en-us/articles/204897248-Understanding-Slack-data-exports">https://get.slack.help/hc/en-us/articles/204897248-Understanding-Slack-data-exports</a></li>
 </ul>
+</li>
+</ol>
 <!--<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="acetakwas">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>-->
     <div class="sharethis-inline-share-buttons"></div>
 
